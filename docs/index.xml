@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HI hugo</title>
+    <link>https://tsinling.org/</link>
+    <description>Recent content on HI hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://tsinling.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://tsinling.org/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://tsinling.org/about/</guid>
+      <description>Hugo is a static site engine written in Go.
+It makes use of a variety of open source projects including:
+ Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
+    </item>
+    
+  </channel>
+</rss>
