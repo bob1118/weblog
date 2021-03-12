@@ -18,7 +18,7 @@ hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否�
 paginate = 5                                              # 首页每页显示的文章数
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
-copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+copyright = "bob <a href =\"http://beian.miit.gov.cn/\" target=\"_blank\" title=\"网站备案链接\">陕ICP备14012495号</a> <img src=\"https://www.12389.gov.cn/images/5692312.png\" alt=\"公安部举报中心\"><a href =\"https://www.12389.gov.cn/\" target=\"_blank\" title=\"12389涉黑涉恶举报\">涉黑涉恶举报</a>"# default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
   name = "bob"
@@ -56,10 +56,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   since = "2017"            # Site creation time          # 站点建立时间
   # use public git repo url to link lastmod git commit, enableGitInfo should be true.
   # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
-  gitRepo = "https://github.com/bob1118/weblog.git"
+  gitRepo = "https://github.com/bob1118/bob1118.github.io"
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Even"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "Hello"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "theme","even"]
   description = "Hugo theme even example site."
 
@@ -67,7 +67,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   archivePaginate = 50
 
   # show 'xx Posts In Total' in archive page ?            # 是否在归档页显示文章的总数
-  showArchiveCount = false
+  showArchiveCount = true
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
