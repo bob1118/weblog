@@ -42,13 +42,19 @@ sequenceDiagrams:
 
 <!--more-->
 # IOS14
+
 自从IOS 14发布后，很多人都去体验[IOS 14 新特性](https://www.apple.com.cn/ios/ios-14/features/)。
+
 ## OTA升级
+
 根据官方建议[https://support.apple.com/zh-cn/ios/update](https://support.apple.com/zh-cn/ios/update)
+
 * Iphone->设置->通用->软件更新
 
 我也尝试升级到了IOS14，总体效果还是值得赞赏的。听了一下午网易云音乐，后盖烫的厉害，尝试DFU恢复一下看看。
+
 ## DFU恢复
+
 手机自身无法更新或恢复的时候，借助[Itunes](https://www.apple.com/itunes/download/win64)来恢复，参考[用Itunes来恢复](https://support.apple.com/zh-cn/HT201263)。
 
 * 连接iphone到计算机usb
