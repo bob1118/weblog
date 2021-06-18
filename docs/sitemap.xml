@@ -3,49 +3,63 @@
   
   <url>
     <loc>https://tsinling.org/categories/</loc>
-    <lastmod>2021-06-02T07:17:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/tags/css/</loc>
-    <lastmod>2021-06-02T07:17:50+08:00</lastmod>
+    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/</loc>
-    <lastmod>2021-06-02T07:17:50+08:00</lastmod>
+    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://tsinling.org/post/mdn-css/</loc>
-    <lastmod>2021-06-02T07:17:50+08:00</lastmod>
+    <loc>https://tsinling.org/tags/javascript/</loc>
+    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/post/mnd-javascript/</loc>
+    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/post/</loc>
-    <lastmod>2021-06-02T07:17:50+08:00</lastmod>
+    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/categories/pub/</loc>
-    <lastmod>2021-06-02T07:17:50+08:00</lastmod>
+    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/tags/</loc>
-    <lastmod>2021-06-02T07:17:50+08:00</lastmod>
+    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/tags/css/</loc>
+    <lastmod>2021-06-13T09:59:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/post/mdn-css/</loc>
+    <lastmod>2021-06-13T09:59:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Mnd Javascript - HI hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="bob" /><meta name="description" content="learn mdn javascript" /><meta name="keywords" content="jvavascript" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.83.0 with theme even" />
+
+
+<link rel="canonical" href="https://tsinling.org/post/mnd-javascript/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Mnd Javascript" />
+<meta property="og:description" content="learn mdn javascript" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tsinling.org/post/mnd-javascript/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-15T09:24:52&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-15T09:24:52&#43;08:00" />
+
+<meta itemprop="name" content="Mnd Javascript">
+<meta itemprop="description" content="learn mdn javascript"><meta itemprop="datePublished" content="2021-06-15T09:24:52&#43;08:00" />
+<meta itemprop="dateModified" content="2021-06-15T09:24:52&#43;08:00" />
+<meta itemprop="wordCount" content="2145">
+<meta itemprop="keywords" content="javascript," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mnd Javascript"/>
+<meta name="twitter:description" content="learn mdn javascript"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Hello World</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Hello World</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Mnd Javascript</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-06-15 </span>
+        <div class="post-category">
+            <a href="/categories/pub/"> pub </a>
+            </div>
+          <span class="more-meta"> 约 2145 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#3-javascript">3 JAVASCRIPT</a>
+      <ul>
+        <li><a href="#31-first-steps">3.1 First Steps</a>
+          <ul>
+            <li><a href="#311-概述">3.1.1 概述</a></li>
+            <li><a href="#312-什么是javascript">3.1.2 什么是javascript</a></li>
+            <li><a href="#313-javascript初体验">3.1.3 Javascript初体验</a></li>
+            <li><a href="#314-javascript代码的错误">3.1.4 Javascript代码的错误</a></li>
+            <li><a href="#315-变量">3.1.5 变量</a></li>
+            <li><a href="#316-数字与运算符">3.1.6 数字与运算符</a></li>
+            <li><a href="#317-字符串">3.1.7 字符串</a></li>
+            <li><a href="#318-有用的字符串方法">3.1.8 有用的字符串方法</a></li>
+            <li><a href="#319-数组">3.1.9 数组</a></li>
+            <li><a href="#3110-笑话生成器">3.1.10 笑话生成器</a></li>
+          </ul>
+        </li>
+        <li><a href="#32-javascript基础要件">3.2 Javascript基础要件</a>
+          <ul>
+            <li><a href="#321-基础要件概述">3.2.1 基础要件概述</a></li>
+            <li><a href="#322-条件语句">3.2.2 条件语句</a></li>
+            <li><a href="#323-代码循环">3.2.3 代码循环</a></li>
+            <li><a href="#324-函数">3.2.4 函数</a></li>
+            <li><a href="#325-建立自己的函数">3.2.5 建立自己的函数</a></li>
+            <li><a href="#325-函数返回值">3.2.5 函数返回值</a></li>
+            <li><a href="#事件介绍">事件介绍</a></li>
+          </ul>
+        </li>
+        <li><a href="#33-javascript对象介绍">3.3 Javascript对象介绍</a>
+          <ul>
+            <li><a href="#331-对象概述">3.3.1 对象概述</a></li>
+            <li><a href="#332-对象基础概念">3.3.2 对象基础概念</a></li>
+            <li><a href="#333-适合新手的javascript">3.3.3 适合新手的javascript</a></li>
+            <li><a href="#334-对象原型">3.3.4 对象原型</a></li>
+            <li><a href="#335-继承">3.3.5 继承</a></li>
+            <li><a href="#336-json">3.3.6 JSON</a></li>
+            <li><a href="#337-对象构建实践">3.3.7 对象构建实践</a></li>
+          </ul>
+        </li>
+        <li><a href="#34-javascript异步">3.4 Javascript异步</a>
+          <ul>
+            <li><a href="#341-异步概述">3.4.1 异步概述</a></li>
+            <li><a href="#342-异步编程概念">3.4.2 异步编程概念</a></li>
+            <li><a href="#343-异步javascript简介">3.4.3 异步JavaScript简介</a></li>
+            <li><a href="#344-超时和间隔">3.4.4 超时和间隔</a></li>
+            <li><a href="#345-优雅的异步处理">3.4.5 优雅的异步处理</a></li>
+            <li><a href="#346-async和await">3.4.6 async和await</a></li>
+            <li><a href="#347-选择正确的方法">3.4.7 选择正确的方法</a></li>
+          </ul>
+        </li>
+        <li><a href="#35-客户端网页api">3.5 客户端网页API</a>
+          <ul>
+            <li><a href="#351-网页api介绍">3.5.1 网页API介绍</a></li>
+            <li><a href="#352-操纵文档">3.5.2 操纵文档</a></li>
+            <li><a href="#353-从服务器获取数据">3.5.3 从服务器获取数据</a></li>
+            <li><a href="#354-第三方api">3.5.4 第三方API</a></li>
+            <li><a href="#355-画图">3.5.5 画图</a></li>
+            <li><a href="#356-视频与音频">3.5.6 视频与音频</a></li>
+            <li><a href="#357-客户端存储">3.5.7 客户端存储</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="3-javascript">3 JAVASCRIPT</h1>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript">https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript</a></p>
+<h2 id="31-first-steps">3.1 First Steps</h2>
+<h3 id="311-概述">3.1.1 概述</h3>
+<h4 id="3111-prerequisites">3.1.1.1 Prerequisites</h4>
+<h4 id="3112-guides">3.1.1.2 Guides</h4>
+<h4 id="3113-assessments">3.1.1.3 Assessments</h4>
+<h3 id="312-什么是javascript">3.1.2 什么是javascript</h3>
+<h4 id="3121-javascript定义">3.1.2.1 javascript定义</h4>
+<p>javascript是一种脚本，一门编程语言，它可以在网页上实现复杂的功能，网页展现给你的不在是简单的静态信息，而是实时的内容更新，交互式的地图，2D/3D动画，滚动播放的视频等等。</p>
+<ul>
+<li>HTML是一种标记语言，用来结构化我们的网页内容并赋予内容含义，例如定义段落、标题和数据表，或在页面中嵌入图片和视频。</li>
+<li>CSS 是一种样式规则语言，可将样式应用于 HTML 内容， 例如设置背景颜色和字体，在多个列中布局内容。</li>
+<li>JavaScript 是一种脚本语言，可以用来创建动态更新的内容，控制多媒体，制作图像动画，还有很多。</li>
+</ul>
+<h4 id="3122-javascript可以做什么">3.1.2.2 javascript可以做什么</h4>
+<p>javascript api分类</p>
+<ul>
+<li>浏览器api，内建与web浏览器，他们可以将数据从周边计算机环境中筛选出来，还可以做复杂的工作。
+<ul>
+<li>Document Object Model API 能通过创建、移除和修改HTML，为页面动态应用咸阳市等手段来操作HTML和CSS。</li>
+<li>Geolocation API 获取地理信息。</li>
+<li>Canvas/WebGL API 可以创建生动的2D和3D图像。</li>
+<li>audio/video API 可以i利用多媒体做一些非常有趣的事。</li>
+</ul>
+</li>
+<li>第三方api
+<ul>
+<li><a href="https://open.weibo.com/">Weibo API</a></li>
+<li><a href="https://dev.twitter.com/overview/documentation">Twitter API</a></li>
+<li><a href="https://developers.google.com/maps/">GoogleMap API</a></li>
+<li><a href="https://lbs.amap.com/">AMap API</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="3123-javascript在页面上做了什么">3.1.2.3 javascript在页面上做了什么</h4>
+<ul>
+<li>浏览器安全</li>
+<li>JavaScript运行次序</li>
+<li>解释代码VS编译代码</li>
+<li>服务端VS客户端</li>
+<li>动态代码VS静态代码</li>
+</ul>
+<h4 id="3124-向页面添加javascript">3.1.2.4 向页面添加JavaScript</h4>
+<p>css使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link">&lt;link&gt;</a>元素链接外部样式表，使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/style">&lt;style&gt;</a>元素向HTML嵌入内部样式表，javascript这里只需要一个元素<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script">&lt;script&gt;</a>。</p>
+<ul>
+<li>内部javascript</li>
+<li>外部javascript</li>
+<li>内联javascript</li>
+<li>脚本调用策略</li>
+<li>async和defer</li>
+</ul>
+<h4 id="3125-注释">3.1.2.5 注释</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//我是一行注释
+</span><span class="c1"></span>
+<span class="cm">/*
+</span><span class="cm">我是多行注释
+</span><span class="cm">我是多行注释
+</span><span class="cm">*/</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="313-javascript初体验">3.1.3 Javascript初体验</h3>
+<h4 id="3131-像程序员一样思考">3.1.3.1 像程序员一样思考</h4>
+<h4 id="3132-猜数字游戏">3.1.3.2 猜数字游戏</h4>
+<ul>
+<li>初始设置</li>
+<li>添加变量</li>
+<li>函数</li>
+<li>运算符</li>
+<li>条件语句</li>
+<li>事件
+<ul>
+<li>Event Listener</li>
+<li>Event Handler</li>
+</ul>
+</li>
+<li>补全代码</li>
+<li>循环</li>
+<li>对象</li>
+<li>浏览器对象</li>
+</ul>
+<h4 id="3133-大功告成">3.1.3.3 大功告成</h4>
+<p><a href="https://roy-tian.github.io/learning-area/javascript/introduction-to-js-1/first-splash/number-guessing-game.html">https://roy-tian.github.io/learning-area/javascript/introduction-to-js-1/first-splash/number-guessing-game.html</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>猜数字游戏<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+        <span class="nt">html</span> <span class="p">{</span>
+            <span class="k">font-family</span><span class="p">:</span> <span class="kc">sans-serif</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="nt">body</span> <span class="p">{</span>
+            <span class="k">width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+            <span class="k">max-width</span><span class="p">:</span> <span class="mi">800</span><span class="kt">px</span><span class="p">;</span>
+            <span class="k">min-width</span><span class="p">:</span> <span class="mi">480</span><span class="kt">px</span><span class="p">;</span>
+            <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="p">.</span><span class="nc">lastResult</span> <span class="p">{</span>
+            <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+            <span class="k">padding</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>猜数字游戏<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>我刚才随机选定了一个100以内的自然数。看你能否在 10 次以内猜中它。每次我都会告诉你所猜的结果是高了还是低了。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;guessField&#34;</span><span class="p">&gt;</span>请猜数：<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;guessField&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;guessField&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;我猜&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;guessSubmit&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;resultParas&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;guesses&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lastResult&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lowOrHi&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="kd">let</span> <span class="nx">randomNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="nx">guesses</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.guesses&#39;</span><span class="p">);</span>
+        <span class="kr">const</span> <span class="nx">lastResult</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.lastResult&#39;</span><span class="p">);</span>
+        <span class="kr">const</span> <span class="nx">lowOrHi</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.lowOrHi&#39;</span><span class="p">);</span>
+        <span class="kr">const</span> <span class="nx">guessSubmit</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.guessSubmit&#39;</span><span class="p">);</span>
+        <span class="kr">const</span> <span class="nx">guessField</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.guessField&#39;</span><span class="p">);</span>
+        <span class="kd">let</span> <span class="nx">guessCount</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="kd">let</span> <span class="nx">resetButton</span><span class="p">;</span>
+
+        <span class="kd">function</span> <span class="nx">checkGuess</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">userGuess</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">guessField</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">guessCount</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">guesses</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;上次猜的数：&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="nx">guesses</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">+=</span> <span class="nx">userGuess</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="p">;</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="nx">userGuess</span> <span class="o">===</span> <span class="nx">randomNumber</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">lastResult</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;恭喜你！猜对了！&#39;</span><span class="p">;</span>
+                <span class="nx">lastResult</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span><span class="p">;</span>
+                <span class="nx">lowOrHi</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+                <span class="nx">setGameOver</span><span class="p">();</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">guessCount</span> <span class="o">===</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">lastResult</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;!!!游戏结束!!!&#39;</span><span class="p">;</span>
+                <span class="nx">lowOrHi</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+                <span class="nx">setGameOver</span><span class="p">();</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="nx">lastResult</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;你猜错了！&#39;</span><span class="p">;</span>
+                <span class="nx">lastResult</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">userGuess</span> <span class="o">&lt;</span> <span class="nx">randomNumber</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">lowOrHi</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;你刚才猜低了！&#39;</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">userGuess</span> <span class="o">&gt;</span> <span class="nx">randomNumber</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">lowOrHi</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;你刚才猜高了！&#39;</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="nx">guessCount</span><span class="o">++</span><span class="p">;</span>
+            <span class="nx">guessField</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+            <span class="nx">guessField</span><span class="p">.</span><span class="nx">focus</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="nx">guessSubmit</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="nx">checkGuess</span><span class="p">);</span>
+
+        <span class="kd">function</span> <span class="nx">setGameOver</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">guessField</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="nx">guessSubmit</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="nx">resetButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">);</span>
+            <span class="nx">resetButton</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;开始新游戏&#39;</span><span class="p">;</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">resetButton</span><span class="p">);</span>
+            <span class="nx">resetButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="nx">resetGame</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">resetGame</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">guessCount</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="kr">const</span> <span class="nx">resetParas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.resultParas p&#39;</span><span class="p">);</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">resetParas</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">resetParas</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="nx">resetButton</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">resetButton</span><span class="p">);</span>
+            <span class="nx">guessField</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+            <span class="nx">guessSubmit</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+            <span class="nx">guessField</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+            <span class="nx">guessField</span><span class="p">.</span><span class="nx">focus</span><span class="p">();</span>
+            <span class="nx">lastResult</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">;</span>
+            <span class="nx">randomNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="314-javascript代码的错误">3.1.4 Javascript代码的错误</h3>
+<h4 id="3141-错误类型">3.1.4.1 错误类型</h4>
+<ul>
+<li>语法错误</li>
+<li>逻辑错误</li>
+<li>其他错误</li>
+</ul>
+<h4 id="3142-出错的示例">3.1.4.2 出错的示例</h4>
+<h4 id="3143-修复语法错误">3.1.4.3 修复语法错误</h4>
+<h3 id="315-变量">3.1.5 变量</h3>
+<h4 id="3151-声明变量">3.1.5.1 声明变量</h4>
+<h4 id="3152-初始化变量">3.1.5.2 初始化变量</h4>
+<h4 id="3153-var与let的区别">3.1.5.3 var与let的区别</h4>
+<h4 id="3154-更新变量">3.1.5.4 更新变量</h4>
+<h4 id="3155-变量类型">3.1.5.5 变量类型</h4>
+<ul>
+<li>Number</li>
+<li>String</li>
+<li>Boolean</li>
+<li>Array</li>
+<li>Object</li>
+</ul>
+<h4 id="3156-动态类型">3.1.5.6 动态类型</h4>
+<h3 id="316-数字与运算符">3.1.6 数字与运算符</h3>
+<h4 id="3161-数字">3.1.6.1 数字</h4>
+<ul>
+<li>Number
+<ul>
+<li>整数</li>
+<li>浮点数</li>
+<li>双精度</li>
+</ul>
+</li>
+<li>进制
+<ul>
+<li>二进制</li>
+<li>八进制</li>
+<li>十六进制</li>
+</ul>
+</li>
+</ul>
+<h4 id="3162-算术运算符">3.1.6.2 算术运算符</h4>
+<ul>
+<li>加法(+)</li>
+<li>减法(-)</li>
+<li>乘法(*)</li>
+<li>除法(/)</li>
+<li>求余(%)</li>
+<li>幂(**)</li>
+</ul>
+<h4 id="3163-自增和自减">3.1.6.3 自增和自减</h4>
+<ul>
+<li>自增(++)</li>
+<li>自减(&ndash;)</li>
+</ul>
+<h4 id="3164-赋值运算符">3.1.6.4 赋值运算符</h4>
+<ul>
+<li>加法赋值(+=)</li>
+<li>减法赋值(-=)</li>
+<li>乘法赋值(*=)</li>
+<li>除法赋值(/=)</li>
+</ul>
+<h4 id="3165-比较运算符">3.1.6.5 比较运算符</h4>
+<ul>
+<li>严格等于(===)</li>
+<li>严格不等于(!==)</li>
+<li>小于(&lt;)</li>
+<li>大于(&gt;)</li>
+<li>小于等于(&lt;=)</li>
+<li>大于等于(&gt;=)</li>
+</ul>
+<h3 id="317-字符串">3.1.7 字符串</h3>
+<h4 id="3171-基本知识">3.1.7.1 基本知识</h4>
+<ul>
+<li>单引号和双引号</li>
+<li>转义字符(\)</li>
+</ul>
+<h4 id="3172-连接字符串">3.1.7.2 连接字符串</h4>
+<h3 id="318-有用的字符串方法">3.1.8 有用的字符串方法</h3>
+<h4 id="3181-字符串当对象">3.1.8.1 字符串当对象</h4>
+<ul>
+<li>字符串长度<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/length">(length)</a></li>
+<li>检索字符</li>
+<li>查找子串<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf">(indexOf)</a></li>
+<li>大小写<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase">(toLowerCase)</a><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase">(toUpperCase)</a></li>
+<li>替换字符串<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace">(replace)</a></li>
+</ul>
+<h3 id="319-数组">3.1.9 数组</h3>
+<h4 id="3191-什么是数组">3.1.9.1 什么是数组</h4>
+<h4 id="3192-有用的方法">3.1.9.2 有用的方法</h4>
+<ul>
+<li>字符串和数组转换
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split">split</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join">join</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/toString">toString</a></li>
+</ul>
+</li>
+<li>添加删除数组项
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift">unshift</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/shift">shift</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/push">push</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/pop">pop</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="3110-笑话生成器">3.1.10 笑话生成器</h3>
+<h2 id="32-javascript基础要件">3.2 Javascript基础要件</h2>
+<h3 id="321-基础要件概述">3.2.1 基础要件概述</h3>
+<h3 id="322-条件语句">3.2.2 条件语句</h3>
+<h3 id="323-代码循环">3.2.3 代码循环</h3>
+<h3 id="324-函数">3.2.4 函数</h3>
+<h3 id="325-建立自己的函数">3.2.5 建立自己的函数</h3>
+<h3 id="325-函数返回值">3.2.5 函数返回值</h3>
+<h3 id="事件介绍">事件介绍</h3>
+<h2 id="33-javascript对象介绍">3.3 Javascript对象介绍</h2>
+<h3 id="331-对象概述">3.3.1 对象概述</h3>
+<h3 id="332-对象基础概念">3.3.2 对象基础概念</h3>
+<h3 id="333-适合新手的javascript">3.3.3 适合新手的javascript</h3>
+<h3 id="334-对象原型">3.3.4 对象原型</h3>
+<h3 id="335-继承">3.3.5 继承</h3>
+<h3 id="336-json">3.3.6 JSON</h3>
+<h3 id="337-对象构建实践">3.3.7 对象构建实践</h3>
+<h2 id="34-javascript异步">3.4 Javascript异步</h2>
+<h3 id="341-异步概述">3.4.1 异步概述</h3>
+<h3 id="342-异步编程概念">3.4.2 异步编程概念</h3>
+<h3 id="343-异步javascript简介">3.4.3 异步JavaScript简介</h3>
+<h3 id="344-超时和间隔">3.4.4 超时和间隔</h3>
+<h3 id="345-优雅的异步处理">3.4.5 优雅的异步处理</h3>
+<h3 id="346-async和await">3.4.6 async和await</h3>
+<h3 id="347-选择正确的方法">3.4.7 选择正确的方法</h3>
+<h2 id="35-客户端网页api">3.5 客户端网页API</h2>
+<h3 id="351-网页api介绍">3.5.1 网页API介绍</h3>
+<h3 id="352-操纵文档">3.5.2 操纵文档</h3>
+<h3 id="353-从服务器获取数据">3.5.3 从服务器获取数据</h3>
+<h3 id="354-第三方api">3.5.4 第三方API</h3>
+<h3 id="355-画图">3.5.5 画图</h3>
+<h3 id="356-视频与音频">3.5.6 视频与音频</h3>
+<h3 id="357-客户端存储">3.5.7 客户端存储</h3>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">bob</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-06-15
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/javascript/">javascript</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/mdn-css/">
+            <span class="next-text nav-default">Mdn Css</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://tsinling.org/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>bob <a href ="http://beian.miit.gov.cn/" target="_blank" title="网站备案链接">陕ICP备14012495号</a> <img src="https://www.12389.gov.cn/images/5692312.png" alt="公安部举报中心"><a href ="https://www.12389.gov.cn/" target="_blank" title="12389涉黑涉恶举报">涉黑涉恶举报</a></span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
