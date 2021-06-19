@@ -79,3 +79,11 @@ cp $WORK\b001\exe\a.out.exe C:\Users\bob\go\bin\hugo.exe
 编译的时候报告*Error: export ordinal too large: 78124*，参考 <https://github.com/golang/go/issues/40795> 需要加上-buildmode=exe，具体原因需要等待golang官方调查...
 
 该问题已经在go1.16版本修复.
+
+## ldflags
+
+默认编译的文件比较大，可以使用-ldflags "-w -s"去掉调试信息。
+
+``` shell
+go install -a -x -v -ldflags "-w -s" --tags extended
+```
