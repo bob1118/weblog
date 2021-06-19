@@ -3,49 +3,49 @@
   
   <url>
     <loc>https://tsinling.org/categories/</loc>
-    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/</loc>
-    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/tags/javascript/</loc>
-    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <lastmod>2021-06-18T18:07:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/post/mnd-javascript/</loc>
-    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <lastmod>2021-06-18T18:07:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/post/</loc>
-    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/categories/pub/</loc>
-    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/tags/</loc>
-    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -94,14 +94,14 @@
   
   <url>
     <loc>https://tsinling.org/tags/hugo/</loc>
-    <lastmod>2021-06-02T01:27:51+08:00</lastmod>
+    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/post/install-hugo-with-extended/</loc>
-    <lastmod>2021-06-02T01:27:51+08:00</lastmod>
+    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

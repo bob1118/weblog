@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.0 with theme even" />
+<meta name="generator" content="Hugo 0.84.0 with theme even" />
 
 
 <link rel="canonical" href="https://tsinling.org/post/install-hugo-with-extended/" />
@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tsinling.org/post/install-hugo-with-extended/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-09-22T13:27:37&#43;08:00" />
-<meta property="article:modified_time" content="2021-06-02T01:27:51&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-19T10:29:03&#43;08:00" />
 
 <meta itemprop="name" content="Install Hugo With Extended">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2020-09-22T13:27:37&#43;08:00" />
-<meta itemprop="dateModified" content="2021-06-02T01:27:51&#43;08:00" />
-<meta itemprop="wordCount" content="325">
+<meta itemprop="dateModified" content="2021-06-19T10:29:03&#43;08:00" />
+<meta itemprop="wordCount" content="376">
 <meta itemprop="keywords" content="hugo," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Install Hugo With Extended"/>
 <meta name="twitter:description" content=""/>
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/pub/"> pub </a>
             </div>
-          <span class="more-meta"> 约 325 字 </span>
+          <span class="more-meta"> 约 376 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -147,6 +147,7 @@
       <ul>
         <li><a href="#快捷安装">快捷安装</a></li>
         <li><a href="#编译安装">编译安装</a></li>
+        <li><a href="#ldflags">ldflags</a></li>
       </ul>
     </li>
   </ul>
@@ -205,6 +206,17 @@ cp <span class="nv">$WORK</span><span class="se">\b</span>001<span class="se">\e
 </div>
 </div><p>编译的时候报告<em>Error: export ordinal too large: 78124</em>，参考 <a href="https://github.com/golang/go/issues/40795">https://github.com/golang/go/issues/40795</a> 需要加上-buildmode=exe，具体原因需要等待golang官方调查&hellip;</p>
 <p>该问题已经在go1.16版本修复.</p>
+<h2 id="ldflags">ldflags</h2>
+<p>默认编译的文件比较大，可以使用-ldflags &ldquo;-w -s&quot;去掉调试信息。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">go install -a -x -v -ldflags <span class="s2">&#34;-w -s&#34;</span> --tags extended
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
