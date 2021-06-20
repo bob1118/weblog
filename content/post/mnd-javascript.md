@@ -376,7 +376,33 @@ css使用[\<link\>](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/li
 
 ### 3.2.5 函数返回值
 
-### 事件介绍
+### 3.2.6 事件介绍
+
+在web中，[事件](https://developer.mozilla.org/zh-CN/docs/Web/Events)在浏览器窗口中被触发并且通常被绑定到窗口内部的特定部分。
+
+#### 3.2.6.1 事件举例
+
+- 用户在某个元素上点击鼠标或者悬停光标。
+- 用户在键盘按下某个按键。
+- 用户调整浏览器的大小或关闭浏览器。
+- 页面停止加载。
+- 提交表单。
+- 播放、暂停、关闭视频。
+- 发生错误。
+- 等...
+
+#### 3.2.6.2 使用事件
+
+- 事件处理器属性
+- 行内事件处理器
+- [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
+
+#### 3.2.6.2 其他事件概念
+
+- 事件对象
+- 阻止默认行为
+- 事件冒泡及捕获
 
 ## 3.3 Javascript对象介绍
 
