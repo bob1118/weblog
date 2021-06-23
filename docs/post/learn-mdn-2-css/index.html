@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="bob" /><meta name="description" content="Cascading Style Sheets" /><meta name="keywords" content="CSS" />
+<meta name="author" content="bob" /><meta name="description" content="learn Mdn Cascading Style Sheets" /><meta name="keywords" content="CSS" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.84.0 with theme even" />
 
 
-<link rel="canonical" href="https://tsinling.org/post/mdn-css/" />
+<link rel="canonical" href="https://tsinling.org/post/learn-mdn-2-css/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="Mdn Css" />
-<meta property="og:description" content="Cascading Style Sheets" />
+<meta property="og:description" content="learn Mdn Cascading Style Sheets" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tsinling.org/post/mdn-css/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://tsinling.org/post/learn-mdn-2-css/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-06-02T07:17:50&#43;08:00" />
-<meta property="article:modified_time" content="2021-06-13T09:59:19&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-02T07:17:50&#43;08:00" />
 
 <meta itemprop="name" content="Mdn Css">
-<meta itemprop="description" content="Cascading Style Sheets"><meta itemprop="datePublished" content="2021-06-02T07:17:50&#43;08:00" />
-<meta itemprop="dateModified" content="2021-06-13T09:59:19&#43;08:00" />
-<meta itemprop="wordCount" content="6819">
+<meta itemprop="description" content="learn Mdn Cascading Style Sheets"><meta itemprop="datePublished" content="2021-06-02T07:17:50&#43;08:00" />
+<meta itemprop="dateModified" content="2021-06-02T07:17:50&#43;08:00" />
+<meta itemprop="wordCount" content="6862">
 <meta itemprop="keywords" content="CSS," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mdn Css"/>
-<meta name="twitter:description" content="Cascading Style Sheets"/>
+<meta name="twitter:description" content="learn Mdn Cascading Style Sheets"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/pub/"> pub </a>
             </div>
-          <span class="more-meta"> 约 6819 字 </span>
+          <span class="more-meta"> 约 6862 字 </span>
           <span class="more-meta"> 预计阅读 14 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -143,49 +143,53 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#css">CSS</a>
+    <li><a href="#2-css">2 CSS</a>
       <ul>
-        <li><a href="#1-css初步">1. CSS初步</a>
+        <li><a href="#21-css第一步">2.1 CSS第一步</a>
           <ul>
-            <li><a href="#11-什么是css">1.1 什么是CSS</a></li>
-            <li><a href="#12-css入门">1.2 CSS入门</a></li>
-            <li><a href="#13如何构建">1.3如何构建</a></li>
-            <li><a href="#14-如何运行">1.4 如何运行</a></li>
+            <li><a href="#211-css概述">2.1.1 CSS概述</a></li>
+            <li><a href="#212-什么是css">2.1.2 什么是CSS</a></li>
+            <li><a href="#213-css入门">2.1.3 CSS入门</a></li>
+            <li><a href="#214-如何构建">2.1.4 如何构建</a></li>
+            <li><a href="#215-如何运行">2.1.5 如何运行</a></li>
           </ul>
         </li>
-        <li><a href="#2-css构建基础">2. CSS构建基础</a>
+        <li><a href="#22-css构建基础">2.2 CSS构建基础</a>
           <ul>
-            <li><a href="#21-层叠与继承">2.1 层叠与继承</a></li>
-            <li><a href="#22-css选择器">2.2 CSS选择器</a></li>
-            <li><a href="#23-盒模型">2.3 盒模型</a></li>
-            <li><a href="#24-背景与边框">2.4 背景与边框</a></li>
-            <li><a href="#25-处理不同的文本方向">2.5 处理不同的文本方向</a></li>
-            <li><a href="#26-溢出的内容">2.6 溢出的内容</a></li>
-            <li><a href="#27-值和单位">2.7 值和单位</a></li>
-            <li><a href="#28-在css中调整大小">2.8 在CSS中调整大小</a></li>
-            <li><a href="#29-图片媒体和表单元素">2.9 图片媒体和表单元素</a></li>
-            <li><a href="#210-样式化表格">2.10 样式化表格</a></li>
-            <li><a href="#211-调试css">2.11 调试CSS</a></li>
-            <li><a href="#212-组织css">2.12 组织CSS</a></li>
+            <li><a href="#221-ccs构建基础概览">2.2.1 CCS构建基础概览</a></li>
+            <li><a href="#222-层叠与继承">2.2.2 层叠与继承</a></li>
+            <li><a href="#223-css选择器">2.2.3 CSS选择器</a></li>
+            <li><a href="#224-盒模型">2.2.4 盒模型</a></li>
+            <li><a href="#225-背景与边框">2.2.5 背景与边框</a></li>
+            <li><a href="#226-处理不同的文本方向">2.2.6 处理不同的文本方向</a></li>
+            <li><a href="#227-溢出的内容">2.2.7 溢出的内容</a></li>
+            <li><a href="#228-值和单位">2.2.8 值和单位</a></li>
+            <li><a href="#229-在css中调整大小">2.2.9 在CSS中调整大小</a></li>
+            <li><a href="#2210-图片媒体和表单元素">2.2.10 图片媒体和表单元素</a></li>
+            <li><a href="#2211-样式化表格">2.2.11 样式化表格</a></li>
+            <li><a href="#2212-调试css">2.2.12 调试CSS</a></li>
+            <li><a href="#2213-组织css">2.2.13 组织CSS</a></li>
           </ul>
         </li>
-        <li><a href="#3-样式化文本">3. 样式化文本</a>
+        <li><a href="#23-样式化文本">2.3 样式化文本</a>
           <ul>
-            <li><a href="#31-基础文字与样式">3.1 基础文字与样式</a></li>
-            <li><a href="#32-样式化列表">3.2 样式化列表</a></li>
-            <li><a href="#33-样式化链接">3.3 样式化链接</a></li>
-            <li><a href="#34-web字体">3.4 web字体</a></li>
+            <li><a href="#231-样式化文字概述">2.3.1 样式化文字概述</a></li>
+            <li><a href="#232-基础文字与样式">2.3.2 基础文字与样式</a></li>
+            <li><a href="#233-样式化列表">2.3.3 样式化列表</a></li>
+            <li><a href="#234-样式化链接">2.3.4 样式化链接</a></li>
+            <li><a href="#234-web字体">2.3.4 web字体</a></li>
           </ul>
         </li>
-        <li><a href="#4-css布局">4. CSS布局</a>
+        <li><a href="#24-css-layout">2.4 CSS layout</a>
           <ul>
-            <li><a href="#41-css概述">4.1 CSS概述</a></li>
-            <li><a href="#42-正常布局流">4.2 正常布局流</a></li>
-            <li><a href="#43-弹性区块">4.3 弹性区块</a></li>
-            <li><a href="#44-网格">4.4 网格</a></li>
-            <li><a href="#45-浮动">4.5 浮动</a></li>
-            <li><a href="#46-定位">4.6 定位</a></li>
-            <li><a href="#47-多列布局">4.7 多列布局</a></li>
+            <li><a href="#241-layout概述">2.4.1 layout概述</a></li>
+            <li><a href="#242-layout简介">2.4.2 layout简介</a></li>
+            <li><a href="#243-normal-flow">2.4.3 Normal flow</a></li>
+            <li><a href="#244-flexbox">2.4.4 Flexbox</a></li>
+            <li><a href="#44-grid">4.4 Grid</a></li>
+            <li><a href="#45-float">4.5 Float</a></li>
+            <li><a href="#46-position">4.6 Position</a></li>
+            <li><a href="#47-multi-column">4.7 Multi column</a></li>
             <li><a href="#48-响应式布局">4.8 响应式布局</a></li>
             <li><a href="#49-媒体查询">4.9 媒体查询</a></li>
             <li><a href="#410-传统布局">4.10 传统布局</a></li>
@@ -199,12 +203,13 @@
   </div>
 </div>
     <div class="post-content">
-      <h1 id="css">CSS</h1>
-<h2 id="1-css初步">1. CSS初步</h2>
-<h3 id="11-什么是css">1.1 什么是CSS</h3>
+      <h1 id="2-css">2 CSS</h1>
+<h2 id="21-css第一步">2.1 CSS第一步</h2>
+<h3 id="211-css概述">2.1.1 CSS概述</h3>
+<h3 id="212-什么是css">2.1.2 什么是CSS</h3>
 <p>CSS(层叠样式表)是用来指定文档如何展示给用户的一门语言，如网页的样式、布局、等等。<br>
 CSS可以用于给文档添加样式，比如改变标题和链接的颜色及大小。它也可以用于创建布局，比如将一个单列文本变成包含主要内容区域和存放相关信息的侧边栏区域的布局。他甚至还可以用来做一些特效，比如动画。</p>
-<h3 id="12-css入门">1.2 CSS入门</h3>
+<h3 id="213-css入门">2.1.3 CSS入门</h3>
 <p>index.html</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -341,7 +346,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="13如何构建">1.3如何构建</h3>
+</div><h3 id="214-如何构建">2.1.4 如何构建</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link">&lt;link&gt;</a>外部样式</li>
 </ul>
@@ -490,7 +495,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 </div><ul>
 <li>选择器属性和值</li>
 </ul>
-<h3 id="14-如何运行">1.4 如何运行</h3>
+<h3 id="215-如何运行">2.1.5 如何运行</h3>
 <p>当浏览器展示一个文件的时候，处理文件的基本流程。</p>
 <!-- ![css](https://media.prod.mdn.mozit.cloud/attachments/2015/10/14/11781/ab96f980498d7c46fe26f6df06b9acfc/rendering.svg)-->
 <ol>
@@ -502,8 +507,9 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 <li>渲染树会依照该出现的结构进行布局。</li>
 <li>网页展示在屏幕上(这一步被称为着色)。</li>
 </ol>
-<h2 id="2-css构建基础">2. CSS构建基础</h2>
-<h3 id="21-层叠与继承">2.1 层叠与继承</h3>
+<h2 id="22-css构建基础">2.2 CSS构建基础</h2>
+<h3 id="221-ccs构建基础概览">2.2.1 CCS构建基础概览</h3>
+<h3 id="222-层叠与继承">2.2.2 层叠与继承</h3>
 <ul>
 <li>
 <p>冲突规则</p>
@@ -928,7 +934,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
   <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="22-css选择器">2.2 CSS选择器</h3>
+</div><h3 id="223-css选择器">2.2.3 CSS选择器</h3>
 <ul>
 <li>
 <p>类型、类和ID选择器</p>
@@ -1541,7 +1547,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="23-盒模型">2.3 盒模型</h3>
+</div><h3 id="224-盒模型">2.2.4 盒模型</h3>
 <p>网页上的区块(<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Block/CSS">block</a>)是指出现在新行上的<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/HTML">HTML</a><a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Element">元素</a>即在该元素的前一个元素的下方，在后一个元素的上方(通常称为块级元素)。<br>
 比如HTML中的<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p">&lt;p&gt;</a>元素默认是块级元素，而<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a">&lt;a&gt;</a>元素是一个内联元素。</p>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/display">display</a>属性可以设置元素的内部和外部显示类型。元素的外部显示类型决定该元素在<a href="https://wiki.developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flow_Layout">流式布局</a>中的表现(block or inline)；元素的内部显示类型控制子元素的布局。</p>
@@ -1966,7 +1972,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="24-背景与边框">2.4 背景与边框</h3>
+</div><h3 id="225-背景与边框">2.2.5 背景与边框</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/background">background</a>
 <ul>
@@ -2064,7 +2070,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="25-处理不同的文本方向">2.5 处理不同的文本方向</h3>
+</div><h3 id="226-处理不同的文本方向">2.2.6 处理不同的文本方向</h3>
 <ul>
 <li>
 <p>书写模式是指文本的排列方向是横向还是纵向。</p>
@@ -2096,7 +2102,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 <p>逻辑内边距、边框和外边框属性</p>
 </li>
 </ul>
-<h3 id="26-溢出的内容">2.6 溢出的内容</h3>
+<h3 id="227-溢出的内容">2.2.7 溢出的内容</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow">overflow</a>
 <ul>
@@ -2106,17 +2112,18 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 </ul>
 </li>
 </ul>
-<h3 id="27-值和单位">2.7 值和单位</h3>
+<h3 id="228-值和单位">2.2.8 值和单位</h3>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units</a></p>
-<h3 id="28-在css中调整大小">2.8 在CSS中调整大小</h3>
+<h3 id="229-在css中调整大小">2.2.9 在CSS中调整大小</h3>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS">https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS</a></p>
-<h3 id="29-图片媒体和表单元素">2.9 图片媒体和表单元素</h3>
+<h3 id="2210-图片媒体和表单元素">2.2.10 图片媒体和表单元素</h3>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Images_media_form_elements">https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Images_media_form_elements</a></p>
-<h3 id="210-样式化表格">2.10 样式化表格</h3>
-<h3 id="211-调试css">2.11 调试CSS</h3>
-<h3 id="212-组织css">2.12 组织CSS</h3>
-<h2 id="3-样式化文本">3. 样式化文本</h2>
-<h3 id="31-基础文字与样式">3.1 基础文字与样式</h3>
+<h3 id="2211-样式化表格">2.2.11 样式化表格</h3>
+<h3 id="2212-调试css">2.2.12 调试CSS</h3>
+<h3 id="2213-组织css">2.2.13 组织CSS</h3>
+<h2 id="23-样式化文本">2.3 样式化文本</h2>
+<h3 id="231-样式化文字概述">2.3.1 样式化文字概述</h3>
+<h3 id="232-基础文字与样式">2.3.2 基础文字与样式</h3>
 <ul>
 <li>用于样式文本的CSS属性分类：
 <ul>
@@ -2223,7 +2230,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 </ul>
 </li>
 </ul>
-<h3 id="32-样式化列表">3.2 样式化列表</h3>
+<h3 id="233-样式化列表">2.3.3 样式化列表</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/line-height">line-height</a></li>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/list-style">list-style</a>
@@ -2237,7 +2244,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol#attr-reversed">reversed</a></li>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol#attr-value">value</a></li>
 </ul>
-<h3 id="33-样式化链接">3.3 样式化链接</h3>
+<h3 id="234-样式化链接">2.3.4 样式化链接</h3>
 <ul>
 <li>链接状态
 <ul>
@@ -2249,7 +2256,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 </ul>
 </li>
 </ul>
-<h3 id="34-web字体">3.4 web字体</h3>
+<h3 id="234-web字体">2.3.4 web字体</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face">@font-face</a>
 <ul>
@@ -2260,9 +2267,19 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 </ul>
 </li>
 </ul>
-<h2 id="4-css布局">4. CSS布局</h2>
-<h3 id="41-css概述">4.1 CSS概述</h3>
-<h3 id="42-正常布局流">4.2 正常布局流</h3>
+<h2 id="24-css-layout">2.4 CSS layout</h2>
+<h3 id="241-layout概述">2.4.1 layout概述</h3>
+<h3 id="242-layout简介">2.4.2 layout简介</h3>
+<ul>
+<li>Normal flow(<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/display">display</a>)</li>
+<li><a href="https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">Flexbox</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/grid">Grid</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/float">Float</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position">Position</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table">表格布局</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/column-count">多列布局</a></li>
+</ul>
+<h3 id="243-normal-flow">2.4.3 Normal flow</h3>
 <p>取得元素的内容来放在一个独立的元素盒子中，然后在其周边加上内边距、边框和外边距。就是之前练习过的盒子模型。<br>
 块级元素的内容宽度是其父元素的100%，其高度与其内容高度一致。<br>
 内联元素的高度和宽度与内容一致。内联元素的高宽无法设置，如果想要控制内联元素的尺寸，需要为元素设置display:block(或display:inline-block)。</p>
@@ -2367,7 +2384,92 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="43-弹性区块">4.3 弹性区块</h3>
+</div><h3 id="244-flexbox">2.4.4 Flexbox</h3>
+<p><a href="https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout</a></p>
+<ul>
+<li>flex模型
+<ul>
+<li>主轴(main axis, main start, main end)</li>
+<li>交叉轴(cross axis, cross start, cross end)</li>
+<li>flex容器(flex container)</li>
+<li>flex项(flex item)</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/3739/97750afee8f091f8b82864be884a3695/flex_terms.png" alt="flex模型说明"></p>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-direction">flex-direction</a>属性指定主轴(main axis)方向默认row
+<ul>
+<li>row(default)</li>
+<li>row-reverse</li>
+<li>column</li>
+<li>column-reverse</li>
+</ul>
+</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap">fles-wrap</a>指定flex元素单行显示还是多行显示。如果允许换行，这个属性允许你控制行的堆叠方向。
+<ul>
+<li>nowrap(default)元素摆放到一行</li>
+<li>wrap元素被打断到多个行</li>
+<li>wrap-reverse</li>
+</ul>
+</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-flow">flex-flow</a>是flex-direction和flex-wrap的缩写。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="nt">flex-direction</span><span class="o">:</span> <span class="nt">row</span><span class="o">;</span>
+<span class="nt">flex-wrap</span><span class="o">:</span> <span class="nt">wrap</span><span class="o">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="nt">flex-flow</span><span class="o">:</span> <span class="nt">row</span> <span class="nt">wrap</span><span class="o">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex">flex</a>是一个可以指定最多三个不同值的缩写属性用来指定flex项的尺寸。</p>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-grow">flex-grow</a>无单位比例。</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-shrink">flex-shrink</a>flex元素的收缩规则。</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-basis">flex-basis</a>flex元素在主轴上的初始大小。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items">align-items</a>控制flex项在交叉轴上的位置。</p>
+<ul>
+<li>stretch</li>
+<li>center</li>
+<li>flex-start</li>
+<li>flex-end</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content">justify-content</a>控制flex项在主轴上的位置。</p>
+<ul>
+<li>flex-start</li>
+<li>flex-end</li>
+<li>center</li>
+<li>space-around</li>
+<li>space-between</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/order">order</a></p>
+<ul>
+<li>所有flex项默认order值是0</li>
+<li>order值大的flex项比order值小的在显示顺序中更靠后。</li>
+<li>相同order值的flex项按源顺序显示。</li>
+</ul>
+</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -2538,103 +2640,23 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>flex模型
-<ul>
-<li>主轴(main axis, main start, main end)</li>
-<li>交叉轴(cross axis, cross start, cross end)</li>
-<li>flex容器(flex container)</li>
-<li>flex项(flex item)</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/3739/97750afee8f091f8b82864be884a3695/flex_terms.png" alt="flex模型说明"></p>
-<ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-direction">flex-direction</a>属性指定主轴(main axis)方向默认row
-<ul>
-<li>row(default)</li>
-<li>row-reverse</li>
-<li>column</li>
-<li>column-reverse</li>
-</ul>
-</li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap">fles-wrap</a>指定flex元素单行显示还是多行显示。如果允许换行，这个属性允许你控制行的堆叠方向。
-<ul>
-<li>nowrap(default)元素摆放到一行</li>
-<li>wrap元素被打断到多个行</li>
-<li>wrap-reverse</li>
-</ul>
-</li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-flow">flex-flow</a>是flex-direction和flex-wrap的缩写。</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="nt">flex-direction</span><span class="o">:</span> <span class="nt">row</span><span class="o">;</span>
-<span class="nt">flex-wrap</span><span class="o">:</span> <span class="nt">wrap</span><span class="o">;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="nt">flex-flow</span><span class="o">:</span> <span class="nt">row</span> <span class="nt">wrap</span><span class="o">;</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex">flex</a>是一个可以指定最多三个不同值的缩写属性用来指定flex项的尺寸。</p>
-<ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-grow">flex-grow</a>无单位比例。</li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-shrink">flex-shrink</a>flex元素的收缩规则。</li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-basis">flex-basis</a>flex元素在主轴上的初始大小。</li>
-</ul>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items">align-items</a>控制flex项在交叉轴上的位置。</p>
-<ul>
-<li>stretch</li>
-<li>center</li>
-<li>flex-start</li>
-<li>flex-end</li>
-</ul>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content">justify-content</a>控制flex项在主轴上的位置。</p>
-<ul>
-<li>flex-start</li>
-<li>flex-end</li>
-<li>center</li>
-<li>space-around</li>
-<li>space-between</li>
-</ul>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/order">order</a></p>
-<ul>
-<li>所有flex项默认order值是0</li>
-<li>order值大的flex项比order值小的在显示顺序中更靠后。</li>
-<li>相同order值的flex项按源顺序显示。</li>
-</ul>
-</li>
-</ul>
-<h3 id="44-网格">4.4 网格</h3>
-<ul>
-<li>定义</li>
-</ul>
+</div><h3 id="44-grid">4.4 Grid</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Grids">https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Grids</a></p>
 <p>网格是由一系列水平及垂直的线构成的一种布局模式。根据网格，我们能够将设计元素进行排列，帮助我们设计一系列具有固定位置以及宽度的元素的页面，使我们的网站页面更加统一。一个网格通常由列(column)与行(row)组成，列与列、行与行之间的间隙被称为沟槽(gutter)。</p>
-<p><img src="https://media.prod.mdn.mozit.cloud/attachments/2016/09/22/13899/fd498c7d62dfe4dc56ee32e85b9b5801/grid.png" alt="网格"></p>
-<h3 id="45-浮动">4.5 浮动</h3>
-<h3 id="46-定位">4.6 定位</h3>
-<h3 id="47-多列布局">4.7 多列布局</h3>
+<h3 id="45-float">4.5 Float</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/float">https://developer.mozilla.org/zh-CN/docs/Web/CSS/float</a></p>
+<h3 id="46-position">4.6 Position</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position">https://developer.mozilla.org/zh-CN/docs/Web/CSS/position</a></p>
+<h3 id="47-multi-column">4.7 Multi column</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns">https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns</a></p>
 <h3 id="48-响应式布局">4.8 响应式布局</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design">https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design</a></p>
 <h3 id="49-媒体查询">4.9 媒体查询</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Media_queries">https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Media_queries</a></p>
 <h3 id="410-传统布局">4.10 传统布局</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods">https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods</a></p>
 <h3 id="411-支持旧浏览器">4.11 支持旧浏览器</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers">https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers</a></p>
     </div>
 
     <div class="post-copyright">
@@ -2645,8 +2667,8 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2021-06-13
-        <a href="https://github.com/bob1118/bob1118.github.io/commit/26376bb3d1f76d62574bb7e02abb09f4179af776" title="learn mdn css">(26376bb)</a>
+        2021-06-02
+        
     </span>
   </p>
   
@@ -2657,12 +2679,12 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
           <a href="/tags/css/">CSS</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/mnd-javascript/">
+        <a class="prev" href="/post/learn-mdn-3-javascript/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Mnd Javascript</span>
+            <span class="prev-text nav-default">mdn Javascript</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/mdn-html/">
+        <a class="next" href="/post/learn-mdn-1-html/">
             <span class="next-text nav-default">Mdn Html</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>

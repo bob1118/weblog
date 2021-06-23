@@ -41,11 +41,11 @@ sequenceDiagrams:
 ---
 
 <!--more-->
-# HTML
+# 1 HTML
 
-## 1. HTML介绍
+## 1.1 介绍
 
-### 1.1背景
+### 1.1.1 概述
 
 1990 年，由于对 Web 未来发展的远见，Tim Berners-Lee 提出了 超文本 的概念，并在第二年在 SGML (en-US) 的基础上将其正式定义为一个标记语言。  
 1993 年，IETF (en-US) 正式开始制定 HTML 规范，并在经历了几个版本的草案后于 1995 年发布了 HTML 2.0 版本。  
@@ -55,7 +55,7 @@ sequenceDiagrams:
 2008 年，两个组织（译注：即 W3C 和 WHATWG）发布了第一份草案。  
 2014 年，两个组织（译注：即 W3C 和 WHATWG）发布了 HTML5 标准的最终版。
 
-### 1.2入门
+### 1.1.2 入门
 
 - 什么是HTML
 
@@ -89,7 +89,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 5. >\<title\>\</title\>      \<title\>元素设置页面标题。浏览器在收藏页面的时候title的内容会做为书签的默认名称。
 6. >\<body\>\</body\>        \<body\>元素包含你访问页面的所有可见内容。
 
-### 1.3\<head\>
+### 1.1.3 [元数据](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
 HTML中的\<head\>元素，他的内容不会在浏览器中显示，他的作用是保存页面中的一些元数据。  
 包含在\<head\>中的一些元数据有\<title\>,\<meta\>,\<link\>等。
@@ -110,7 +110,7 @@ HTML中的\<head\>元素，他的内容不会在浏览器中显示，他的作�
 5. 为文档设定主语言
    - >\<html language="zh-CN"\>
 
-### 1.4HTML文字基础
+### 1.1.4 HTML文字基础
 
 标题标签
 
@@ -154,7 +154,7 @@ HTML中的\<head\>元素，他的内容不会在浏览器中显示，他的作�
 </ol>
 ```
 
-### 1.5超链接
+### 1.1.5 超链接
 
 超链接是互联网提供的最令人兴奋的创新之一。  
 通过将文本转换为[\<a\>](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a "mdn docs html element \<a\>")元素(锚元素)内的链接来创建基本链接。
@@ -187,7 +187,7 @@ download属性:
 </a>
 ```
 
-### 1.6高级文字格式
+### 1.1.6 高级文字格式
 
 - 描述列表(describtion list)
 
@@ -212,7 +212,7 @@ download属性:
 - 展示计算机代码(code pre var kbd samp)
 - 标记时间(time)
 
-### 1.7文档与网站构架
+### 1.1.7 文档与网站构架
 
 网站由若干html文档组成，每一个html文档包含若干的布局元素。
 
@@ -225,13 +225,15 @@ download属性:
   - \<div>
   - \<span>
 
-### 1.8HTML调试
+### 1.1.8 HTML调试
 
 firefox调试技术。
 
-## 2 多媒体
+## 1.2 多媒体
 
-### 2.1 图片
+### 1.2.1 概述
+
+### 1.2.2 图片
 
 - [\<img\>](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img)  
 
@@ -273,7 +275,7 @@ p{
 }
 ```
 
-### 2.2 音频
+### 1.2.3 音频
 
 - [\<audio\>](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio)
 
@@ -285,7 +287,7 @@ p{
 </audio>
 ```
 
-### 2.3 视频
+### 1.2.4 视频
 
 - [\<video\>](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video)
 
@@ -300,7 +302,7 @@ p{
 </video>
 ```
 
-### 2.4 嵌入
+### 1.2.5 嵌入
 
 - [\<iframe\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
 
@@ -334,7 +336,7 @@ p{
 </object>
 ```
 
-### 2.5 矢量图
+### 1.2.6 矢量图
 
 在网上，你会和两种类型的图片打交道-位图和矢量图。
 
@@ -370,7 +372,7 @@ p{
   </svg>
 ```
 
-### 2.6 图片自适应
+### 1.2.7 图片自适应
 
 ```html
 <img srcset="elva-fairy-320w.jpg 320w,
@@ -387,9 +389,11 @@ p{
 - 查看给与该媒体查询的槽大小
 - 加载srcset列表中引用的最接近所选槽大小的图像
 
-## 3 表格
+## 1.3 表格
 
-### 3.1 基础表格
+### 1.3.1 表格概述
+
+### 1.3.2 基础表格
 
 - [\<table\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
 
@@ -464,7 +468,7 @@ p{
     </table>
 ```
 
-### 3.2 高级表格
+### 1.3.3 高级表格
 
 - [\<caption\>](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/caption)
 

@@ -3,119 +3,126 @@
   
   <url>
     <loc>https://tsinling.org/categories/</loc>
-    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
+    <lastmod>2021-06-23T10:43:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/</loc>
-    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/tags/javascript/</loc>
-    <lastmod>2021-06-18T18:07:09+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/post/mnd-javascript/</loc>
-    <lastmod>2021-06-18T18:07:09+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/post/</loc>
-    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/categories/pub/</loc>
-    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/tags/</loc>
-    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/tags/css/</loc>
-    <lastmod>2021-06-13T09:59:19+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/post/mdn-css/</loc>
-    <lastmod>2021-06-13T09:59:19+08:00</lastmod>
+    <lastmod>2021-06-23T10:43:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/tags/html/</loc>
-    <lastmod>2021-06-02T01:27:51+08:00</lastmod>
+    <lastmod>2021-06-23T10:43:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://tsinling.org/post/mdn-html/</loc>
-    <lastmod>2021-06-02T01:27:51+08:00</lastmod>
+    <loc>https://tsinling.org/post/learn-mdn-4-html-form/</loc>
+    <lastmod>2021-06-23T10:43:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/post/</loc>
+    <lastmod>2021-06-23T10:43:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/categories/pub/</loc>
+    <lastmod>2021-06-23T10:43:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/tags/</loc>
+    <lastmod>2021-06-23T10:43:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/tags/javascript/</loc>
+    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/post/learn-mdn-3-javascript/</loc>
+    <lastmod>2021-06-15T09:24:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/tags/css/</loc>
+    <lastmod>2021-06-02T07:17:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/post/learn-mdn-2-css/</loc>
+    <lastmod>2021-06-02T07:17:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/post/learn-mdn-1-html/</loc>
+    <lastmod>2021-05-30T20:22:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/tags/freeswitch/</loc>
-    <lastmod>2021-06-02T01:27:51+08:00</lastmod>
+    <lastmod>2021-06-20T17:05:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/post/freeswitch-stunserver/</loc>
-    <lastmod>2021-06-02T01:27:51+08:00</lastmod>
+    <lastmod>2021-06-20T17:05:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/tags/hugo/</loc>
-    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
+    <lastmod>2021-06-20T17:05:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/post/install-hugo-with-extended/</loc>
-    <lastmod>2021-06-19T10:29:03+08:00</lastmod>
+    <lastmod>2021-06-20T17:05:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/tags/iphone/</loc>
-    <lastmod>2021-06-02T01:27:51+08:00</lastmod>
+    <lastmod>2021-06-20T17:05:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/post/iphone-restore/</loc>
-    <lastmod>2021-06-02T01:27:51+08:00</lastmod>
+    <lastmod>2021-06-20T17:05:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

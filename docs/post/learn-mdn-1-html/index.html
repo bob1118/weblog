@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.84.0 with theme even" />
 
 
-<link rel="canonical" href="https://tsinling.org/post/mdn-html/" />
+<link rel="canonical" href="https://tsinling.org/post/learn-mdn-1-html/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -42,14 +42,14 @@
 <meta property="og:title" content="Mdn Html" />
 <meta property="og:description" content="learn html from mdn web docs" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tsinling.org/post/mdn-html/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://tsinling.org/post/learn-mdn-1-html/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-05-30T20:22:15&#43;08:00" />
-<meta property="article:modified_time" content="2021-06-02T01:27:51&#43;08:00" />
+<meta property="article:modified_time" content="2021-05-30T20:22:15&#43;08:00" />
 
 <meta itemprop="name" content="Mdn Html">
 <meta itemprop="description" content="learn html from mdn web docs"><meta itemprop="datePublished" content="2021-05-30T20:22:15&#43;08:00" />
-<meta itemprop="dateModified" content="2021-06-02T01:27:51&#43;08:00" />
-<meta itemprop="wordCount" content="3383">
+<meta itemprop="dateModified" content="2021-05-30T20:22:15&#43;08:00" />
+<meta itemprop="wordCount" content="3377">
 <meta itemprop="keywords" content="html," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mdn Html"/>
 <meta name="twitter:description" content="learn html from mdn web docs"/>
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/pub/"> pub </a>
             </div>
-          <span class="more-meta"> 约 3383 字 </span>
+          <span class="more-meta"> 约 3377 字 </span>
           <span class="more-meta"> 预计阅读 7 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -143,34 +143,36 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#html">HTML</a>
+    <li><a href="#1-html">1 HTML</a>
       <ul>
-        <li><a href="#1-html介绍">1. HTML介绍</a>
+        <li><a href="#11-介绍">1.1 介绍</a>
           <ul>
-            <li><a href="#11背景">1.1背景</a></li>
-            <li><a href="#12入门">1.2入门</a></li>
-            <li><a href="#13head">1.3&lt;head&gt;</a></li>
-            <li><a href="#14html文字基础">1.4HTML文字基础</a></li>
-            <li><a href="#15超链接">1.5超链接</a></li>
-            <li><a href="#16高级文字格式">1.6高级文字格式</a></li>
-            <li><a href="#17文档与网站构架">1.7文档与网站构架</a></li>
-            <li><a href="#18html调试">1.8HTML调试</a></li>
+            <li><a href="#111-概述">1.1.1 概述</a></li>
+            <li><a href="#112-入门">1.1.2 入门</a></li>
+            <li><a href="#113-元数据httpsdevelopermozillaorgzh-cndocswebhtmlelementmeta">1.1.3 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta">元数据</a></a></li>
+            <li><a href="#114-html文字基础">1.1.4 HTML文字基础</a></li>
+            <li><a href="#115-超链接">1.1.5 超链接</a></li>
+            <li><a href="#116-高级文字格式">1.1.6 高级文字格式</a></li>
+            <li><a href="#117-文档与网站构架">1.1.7 文档与网站构架</a></li>
+            <li><a href="#118-html调试">1.1.8 HTML调试</a></li>
           </ul>
         </li>
-        <li><a href="#2-多媒体">2 多媒体</a>
+        <li><a href="#12-多媒体">1.2 多媒体</a>
           <ul>
-            <li><a href="#21-图片">2.1 图片</a></li>
-            <li><a href="#22-音频">2.2 音频</a></li>
-            <li><a href="#23-视频">2.3 视频</a></li>
-            <li><a href="#24-嵌入">2.4 嵌入</a></li>
-            <li><a href="#25-矢量图">2.5 矢量图</a></li>
-            <li><a href="#26-图片自适应">2.6 图片自适应</a></li>
+            <li><a href="#121-概述">1.2.1 概述</a></li>
+            <li><a href="#122-图片">1.2.2 图片</a></li>
+            <li><a href="#123-音频">1.2.3 音频</a></li>
+            <li><a href="#124-视频">1.2.4 视频</a></li>
+            <li><a href="#125-嵌入">1.2.5 嵌入</a></li>
+            <li><a href="#126-矢量图">1.2.6 矢量图</a></li>
+            <li><a href="#127-图片自适应">1.2.7 图片自适应</a></li>
           </ul>
         </li>
-        <li><a href="#3-表格">3 表格</a>
+        <li><a href="#13-表格">1.3 表格</a>
           <ul>
-            <li><a href="#31-基础表格">3.1 基础表格</a></li>
-            <li><a href="#32-高级表格">3.2 高级表格</a></li>
+            <li><a href="#131-表格概述">1.3.1 表格概述</a></li>
+            <li><a href="#132-基础表格">1.3.2 基础表格</a></li>
+            <li><a href="#133-高级表格">1.3.3 高级表格</a></li>
           </ul>
         </li>
       </ul>
@@ -180,9 +182,9 @@
   </div>
 </div>
     <div class="post-content">
-      <h1 id="html">HTML</h1>
-<h2 id="1-html介绍">1. HTML介绍</h2>
-<h3 id="11背景">1.1背景</h3>
+      <h1 id="1-html">1 HTML</h1>
+<h2 id="11-介绍">1.1 介绍</h2>
+<h3 id="111-概述">1.1.1 概述</h3>
 <p>1990 年，由于对 Web 未来发展的远见，Tim Berners-Lee 提出了 超文本 的概念，并在第二年在 SGML (en-US) 的基础上将其正式定义为一个标记语言。<br>
 1993 年，IETF (en-US) 正式开始制定 HTML 规范，并在经历了几个版本的草案后于 1995 年发布了 HTML 2.0 版本。<br>
 1994 年，Berners-Lee 为了 Web 发展而成立了 W3C (en-US)。<br>
@@ -190,7 +192,7 @@
 1999 年，HTML 4.0 发布，并在 2000 年成为 ISO (en-US) 标准。<br>
 2008 年，两个组织（译注：即 W3C 和 WHATWG）发布了第一份草案。<br>
 2014 年，两个组织（译注：即 W3C 和 WHATWG）发布了 HTML5 标准的最终版。</p>
-<h3 id="12入门">1.2入门</h3>
+<h3 id="112-入门">1.1.2 入门</h3>
 <ul>
 <li>什么是HTML</li>
 </ul>
@@ -262,7 +264,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 </blockquote>
 </li>
 </ol>
-<h3 id="13head">1.3&lt;head&gt;</h3>
+<h3 id="113-元数据httpsdevelopermozillaorgzh-cndocswebhtmlelementmeta">1.1.3 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta">元数据</a></h3>
 <p>HTML中的&lt;head&gt;元素，他的内容不会在浏览器中显示，他的作用是保存页面中的一些元数据。<br>
 包含在&lt;head&gt;中的一些元数据有&lt;title&gt;,&lt;meta&gt;,&lt;link&gt;等。</p>
 <ol>
@@ -337,7 +339,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 </ul>
 </li>
 </ol>
-<h3 id="14html文字基础">1.4HTML文字基础</h3>
+<h3 id="114-html文字基础">1.1.4 HTML文字基础</h3>
 <p>标题标签</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -410,7 +412,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="15超链接">1.5超链接</h3>
+</div><h3 id="115-超链接">1.1.5 超链接</h3>
 <p>超链接是互联网提供的最令人兴奋的创新之一。<br>
 通过将文本转换为<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a" title="mdn docs html element &lt;a&gt;">&lt;a&gt;</a>元素(锚元素)内的链接来创建基本链接。</p>
 <p>几个简单的超链接例子：</p>
@@ -451,7 +453,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="16高级文字格式">1.6高级文字格式</h3>
+</div><h3 id="116-高级文字格式">1.1.6 高级文字格式</h3>
 <ul>
 <li>描述列表(describtion list)</li>
 </ul>
@@ -488,7 +490,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 <li>展示计算机代码(code pre var kbd samp)</li>
 <li>标记时间(time)</li>
 </ul>
-<h3 id="17文档与网站构架">1.7文档与网站构架</h3>
+<h3 id="117-文档与网站构架">1.1.7 文档与网站构架</h3>
 <p>网站由若干html文档组成，每一个html文档包含若干的布局元素。</p>
 <ul>
 <li>页眉 &lt;header&gt;</li>
@@ -503,10 +505,11 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 </ul>
 </li>
 </ul>
-<h3 id="18html调试">1.8HTML调试</h3>
+<h3 id="118-html调试">1.1.8 HTML调试</h3>
 <p>firefox调试技术。</p>
-<h2 id="2-多媒体">2 多媒体</h2>
-<h3 id="21-图片">2.1 图片</h3>
+<h2 id="12-多媒体">1.2 多媒体</h2>
+<h3 id="121-概述">1.2.1 概述</h3>
+<h3 id="122-图片">1.2.2 图片</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img">&lt;img&gt;</a></li>
 </ul>
@@ -584,7 +587,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="22-音频">2.2 音频</h3>
+</div><h3 id="123-音频">1.2.3 音频</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio">&lt;audio&gt;</a></li>
 </ul>
@@ -604,7 +607,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 <span class="p">&lt;/</span><span class="nt">audio</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="23-视频">2.3 视频</h3>
+</div><h3 id="124-视频">1.2.4 视频</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video">&lt;video&gt;</a></li>
 </ul>
@@ -630,7 +633,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 <span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="24-嵌入">2.4 嵌入</h3>
+</div><h3 id="125-嵌入">1.2.5 嵌入</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">&lt;iframe&gt;</a></li>
 </ul>
@@ -692,7 +695,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 <span class="p">&lt;/</span><span class="nt">object</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="25-矢量图">2.5 矢量图</h3>
+</div><h3 id="126-矢量图">1.2.6 矢量图</h3>
 <p>在网上，你会和两种类型的图片打交道-位图和矢量图。</p>
 <ul>
 <li>位图使用像素网络来定义</li>
@@ -749,7 +752,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
   <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="26-图片自适应">2.6 图片自适应</h3>
+</div><h3 id="127-图片自适应">1.2.7 图片自适应</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -776,8 +779,9 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 <li>查看给与该媒体查询的槽大小</li>
 <li>加载srcset列表中引用的最接近所选槽大小的图像</li>
 </ul>
-<h2 id="3-表格">3 表格</h2>
-<h3 id="31-基础表格">3.1 基础表格</h3>
+<h2 id="13-表格">1.3 表格</h2>
+<h3 id="131-表格概述">1.3.1 表格概述</h3>
+<h3 id="132-基础表格">1.3.2 基础表格</h3>
 <ul>
 <li>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">&lt;table&gt;</a></p>
@@ -922,7 +926,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
     <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="32-高级表格">3.2 高级表格</h3>
+</div><h3 id="133-高级表格">1.3.3 高级表格</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/caption">&lt;caption&gt;</a></li>
 </ul>
@@ -1146,8 +1150,8 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2021-06-02
-        <a href="https://github.com/bob1118/bob1118.github.io/commit/724f6c838d27968186ae21189ebf05c412d3da78" title="htmal tables">(724f6c8)</a>
+        2021-05-30
+        
     </span>
   </p>
   
@@ -1158,7 +1162,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
           <a href="/tags/html/">html</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/mdn-css/">
+        <a class="prev" href="/post/learn-mdn-2-css/">
             <i class="iconfont icon-left"></i>
             <span class="prev-text nav-default">Mdn Css</span>
             <span class="prev-text nav-mobile">上一篇</span>

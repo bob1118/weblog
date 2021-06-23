@@ -4,7 +4,7 @@ date: 2021-06-02T07:17:50+08:00
 lastmod: 2021-06-02T07:17:50+08:00
 draft: true
 keywords: [CSS]
-description: "Cascading Style Sheets"
+description: "learn Mdn Cascading Style Sheets"
 tags: [CSS]
 categories: [pub]
 author: "bob"
@@ -41,16 +41,18 @@ sequenceDiagrams:
 ---
 
 <!--more-->
-# CSS
+# 2 CSS
 
-## 1. CSS初步
+## 2.1 CSS第一步
 
-### 1.1 什么是CSS
+### 2.1.1 CSS概述
+
+### 2.1.2 什么是CSS
 
 CSS(层叠样式表)是用来指定文档如何展示给用户的一门语言，如网页的样式、布局、等等。  
 CSS可以用于给文档添加样式，比如改变标题和链接的颜色及大小。它也可以用于创建布局，比如将一个单列文本变成包含主要内容区域和存放相关信息的侧边栏区域的布局。他甚至还可以用来做一些特效，比如动画。
 
-### 1.2 CSS入门
+### 2.1.3 CSS入门
 
 index.html
 
@@ -123,7 +125,7 @@ body h1+p.special{
 }
 ```
 
-### 1.3如何构建
+### 2.1.4 如何构建
 
 - [\<link\>](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link)外部样式
 
@@ -207,7 +209,7 @@ index.html
 
 - 选择器属性和值
 
-### 1.4 如何运行
+### 2.1.5 如何运行
 
 当浏览器展示一个文件的时候，处理文件的基本流程。
 
@@ -221,9 +223,11 @@ index.html
 5. 渲染树会依照该出现的结构进行布局。
 6. 网页展示在屏幕上(这一步被称为着色)。
 
-## 2. CSS构建基础
+## 2.2 CSS构建基础
 
-### 2.1 层叠与继承
+### 2.2.1 CCS构建基础概览
+
+### 2.2.2 层叠与继承
 
 - 冲突规则
   - 元素选择器按顺序总是最后的规则生效
@@ -437,7 +441,7 @@ li {
   }
 ```
 
-### 2.2 CSS选择器
+### 2.2.3 CSS选择器
 
 - 类型、类和ID选择器
   - 类型选择器也叫“标签名选择器”或者是“元素选择器”，因为它在文档中选择了一个HTML标签/元素。
@@ -748,7 +752,7 @@ li {
 </html>
 ```
 
-### 2.3 盒模型
+### 2.2.4 盒模型
 
 网页上的区块([block](https://developer.mozilla.org/zh-CN/docs/Glossary/Block/CSS))是指出现在新行上的[HTML](https://developer.mozilla.org/zh-CN/docs/Glossary/HTML)[元素](https://developer.mozilla.org/zh-CN/docs/Glossary/Element)即在该元素的前一个元素的下方，在后一个元素的上方(通常称为块级元素)。  
 比如HTML中的[\<p\>](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p)元素默认是块级元素，而[\<a\>](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a)元素是一个内联元素。  
@@ -982,7 +986,7 @@ html {
 </html>
 ```
 
-### 2.4 背景与边框
+### 2.2.5 背景与边框
 
 - [background](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background)
   - [background-color](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-color)背景色扩展到元素的内容和内边距的下面。
@@ -1034,7 +1038,7 @@ html {
 </html>
 ```
 
-### 2.5 处理不同的文本方向
+### 2.2.6 处理不同的文本方向
 
 - 书写模式是指文本的排列方向是横向还是纵向。
   - [writing-mode](https://developer.mozilla.org/zh-CN/docs/Web/CSS/writing-mode)
@@ -1053,34 +1057,36 @@ html {
 - 逻辑属性和逻辑值
 - 逻辑内边距、边框和外边框属性
 
-### 2.6 溢出的内容
+### 2.2.7 溢出的内容
 
 - [overflow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow)
   - overflow:visible
   - overflow:hidden
   - overflow:scroll
 
-### 2.7 值和单位
+### 2.2.8 值和单位
 
 <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units>
 
-### 2.8 在CSS中调整大小
+### 2.2.9 在CSS中调整大小
 
 <https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS>
 
-### 2.9 图片媒体和表单元素
+### 2.2.10 图片媒体和表单元素
 
 <https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Images_media_form_elements>
 
-### 2.10 样式化表格
+### 2.2.11 样式化表格
 
-### 2.11 调试CSS
+### 2.2.12 调试CSS
 
-### 2.12 组织CSS
+### 2.2.13 组织CSS
 
-## 3. 样式化文本
+## 2.3 样式化文本
 
-### 3.1 基础文字与样式
+### 2.3.1 样式化文字概述
+
+### 2.3.2 基础文字与样式
 
 - 用于样式文本的CSS属性分类：
   - 字体样式
@@ -1148,7 +1154,7 @@ html {
     - [word-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow-wrap)
     - [writing-mode](https://developer.mozilla.org/zh-CN/docs/Web/CSS/writing-mode)
 
-### 3.2 样式化列表
+### 2.3.3 样式化列表
 
 - [line-height](https://developer.mozilla.org/zh-CN/docs/Web/CSS/line-height)
 - [list-style](https://developer.mozilla.org/zh-CN/docs/Web/CSS/list-style)
@@ -1159,7 +1165,7 @@ html {
 - [reversed](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol#attr-reversed)
 - [value](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol#attr-value)
 
-### 3.3 样式化链接
+### 2.3.4 样式化链接
 
 - 链接状态
   - [link](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:link)
@@ -1168,7 +1174,7 @@ html {
   - [focus](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus)
   - [active](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:active)
 
-### 3.4 web字体
+### 2.3.4 web字体
 
 - [@font-face](https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face)
   - [font-family](https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face/font-family)
@@ -1176,11 +1182,21 @@ html {
   - [font-style](https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face/font-style)
   - [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-weight)
 
-## 4. CSS布局
+## 2.4 CSS layout
 
-### 4.1 CSS概述
+### 2.4.1 layout概述
 
-### 4.2 正常布局流
+### 2.4.2 layout简介
+
+- Normal flow([display](https://developer.mozilla.org/zh-CN/docs/Web/CSS/display))
+- [Flexbox](https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+- [Grid](https://developer.mozilla.org/zh-CN/docs/Web/CSS/grid)
+- [Float](https://developer.mozilla.org/zh-CN/docs/Web/CSS/float)
+- [Position](https://developer.mozilla.org/zh-CN/docs/Web/CSS/position)
+- [表格布局](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table)
+- [多列布局](https://developer.mozilla.org/zh-CN/docs/Web/CSS/column-count)
+
+### 2.4.3 Normal flow
 
 取得元素的内容来放在一个独立的元素盒子中，然后在其周边加上内边距、边框和外边距。就是之前练习过的盒子模型。  
 块级元素的内容宽度是其父元素的100%，其高度与其内容高度一致。  
@@ -1238,7 +1254,59 @@ html {
 </html>
 ```
 
-### 4.3 弹性区块
+### 2.4.4 Flexbox
+
+<https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout>
+
+- flex模型
+  - 主轴(main axis, main start, main end)
+  - 交叉轴(cross axis, cross start, cross end)
+  - flex容器(flex container)
+  - flex项(flex item)
+
+![flex模型说明](https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/3739/97750afee8f091f8b82864be884a3695/flex_terms.png)
+
+- [flex-direction](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-direction)属性指定主轴(main axis)方向默认row
+  - row(default)
+  - row-reverse
+  - column
+  - column-reverse
+- [fles-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap)指定flex元素单行显示还是多行显示。如果允许换行，这个属性允许你控制行的堆叠方向。
+  - nowrap(default)元素摆放到一行
+  - wrap元素被打断到多个行
+  - wrap-reverse
+- [flex-flow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-flow)是flex-direction和flex-wrap的缩写。
+
+```CSS
+flex-direction: row;
+flex-wrap: wrap;
+```
+
+```CSS
+flex-flow: row wrap;
+```
+
+- [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex)是一个可以指定最多三个不同值的缩写属性用来指定flex项的尺寸。
+  - [flex-grow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-grow)无单位比例。
+  - [flex-shrink](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-shrink)flex元素的收缩规则。
+  - [flex-basis](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-basis)flex元素在主轴上的初始大小。
+
+- [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items)控制flex项在交叉轴上的位置。
+  - stretch
+  - center
+  - flex-start
+  - flex-end
+
+- [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content)控制flex项在主轴上的位置。
+  - flex-start
+  - flex-end
+  - center
+  - space-around
+  - space-between
+- [order](https://developer.mozilla.org/zh-CN/docs/Web/CSS/order)
+  - 所有flex项默认order值是0
+  - order值大的flex项比order值小的在显示顺序中更靠后。
+  - 相同order值的flex项按源顺序显示。
 
 ```html
 <!DOCTYPE html>
@@ -1325,74 +1393,36 @@ html {
 </html>
 ```
 
-- flex模型
-  - 主轴(main axis, main start, main end)
-  - 交叉轴(cross axis, cross start, cross end)
-  - flex容器(flex container)
-  - flex项(flex item)
+### 4.4 Grid
 
-![flex模型说明](https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/3739/97750afee8f091f8b82864be884a3695/flex_terms.png)
-
-- [flex-direction](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-direction)属性指定主轴(main axis)方向默认row
-  - row(default)
-  - row-reverse
-  - column
-  - column-reverse
-- [fles-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap)指定flex元素单行显示还是多行显示。如果允许换行，这个属性允许你控制行的堆叠方向。
-  - nowrap(default)元素摆放到一行
-  - wrap元素被打断到多个行
-  - wrap-reverse
-- [flex-flow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-flow)是flex-direction和flex-wrap的缩写。
-
-```CSS
-flex-direction: row;
-flex-wrap: wrap;
-```
-
-```CSS
-flex-flow: row wrap;
-```
-
-- [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex)是一个可以指定最多三个不同值的缩写属性用来指定flex项的尺寸。
-  - [flex-grow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-grow)无单位比例。
-  - [flex-shrink](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-shrink)flex元素的收缩规则。
-  - [flex-basis](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-basis)flex元素在主轴上的初始大小。
-
-- [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items)控制flex项在交叉轴上的位置。
-  - stretch
-  - center
-  - flex-start
-  - flex-end
-
-- [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content)控制flex项在主轴上的位置。
-  - flex-start
-  - flex-end
-  - center
-  - space-around
-  - space-between
-- [order](https://developer.mozilla.org/zh-CN/docs/Web/CSS/order)
-  - 所有flex项默认order值是0
-  - order值大的flex项比order值小的在显示顺序中更靠后。
-  - 相同order值的flex项按源顺序显示。
-
-### 4.4 网格
-
-- 定义
+<https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Grids>
 
 网格是由一系列水平及垂直的线构成的一种布局模式。根据网格，我们能够将设计元素进行排列，帮助我们设计一系列具有固定位置以及宽度的元素的页面，使我们的网站页面更加统一。一个网格通常由列(column)与行(row)组成，列与列、行与行之间的间隙被称为沟槽(gutter)。
 
-![网格](https://media.prod.mdn.mozit.cloud/attachments/2016/09/22/13899/fd498c7d62dfe4dc56ee32e85b9b5801/grid.png)
+### 4.5 Float
 
-### 4.5 浮动
+<https://developer.mozilla.org/zh-CN/docs/Web/CSS/float>
 
-### 4.6 定位
+### 4.6 Position
 
-### 4.7 多列布局
+<https://developer.mozilla.org/zh-CN/docs/Web/CSS/position>
+
+### 4.7 Multi column
+
+<https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns>
 
 ### 4.8 响应式布局
 
+<https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design>
+
 ### 4.9 媒体查询
+
+<https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Media_queries>
 
 ### 4.10 传统布局
 
+<https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods>
+
 ### 4.11 支持旧浏览器
+
+<https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers>

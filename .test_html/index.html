@@ -3,39 +3,174 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Random color example — event handler property</title>
+    <title>Payment form example</title>
     <style>
-        button {
-            margin: 10px;
+        h1 {
+            margin-top: 0;
         }
-        label{
-            color:gray;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+
+        div+div {
+            margin-top: 1em;
+        }
+
+        label span {
+            display: inline-block;
+            width: 120px;
+            text-align: right;
+        }
+
+        input,
+        textarea {
+            font: 1em sans-serif;
+            width: 250px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            width: auto;
+            border: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #000;
+        }
+
+        textarea {
+            vertical-align: top;
+            height: 5em;
+            resize: vertical;
+        }
+
+        fieldset {
+            width: 250px;
+            box-sizing: border-box;
+            margin-left: 136px;
+            border: 1px solid #999;
+        }
+
+        button {
+            margin: 20px 0 0 124px;
+        }
+
+        label {
+            position: relative;
+        }
+
+        label em {
+            position: absolute;
+            right: 5px;
+            top: 20px;
         }
     </style>
 </head>
 
 <body>
-    <button>here is a button</button>
-    <label>i'm label</label>
-    <script>
-        const btn = document.querySelector('button');
-
-        function random(number) {
-            return Math.floor(Math.random() * number);
-        }
-
-        function bgChange() {
-            const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-            document.body.style.backgroundColor = rndCol;
-        }
-
-        function contextChange(text){
-            // const showText = document.querySelector('label');
-            // showText.text = text;
-        }
-        btn.onfocus = bgChange;
-        btn.onclick = contextChange("button onclick")
-    </script>
+    <form method="post">
+        <h1>Payment form</h1>
+        <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+        <section>
+            <h2>Contact information</h2>
+            <fieldset>
+                <legend>Title</legend>
+                <ul>
+                    <li>
+                        <label for="title_1">
+                            <input type="radio" id="title_1" name="title" value="A">
+                            Ace
+                        </label>
+                    </li>
+                    <li>
+                        <label for="title_2">
+                            <input type="radio" id="title_2" name="title" value="K">
+                            King
+                        </label>
+                    </li>
+                    <li>
+                        <label for="title_3">
+                            <input type="radio" id="title_3" name="title" value="Q">
+                            Queen
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <p>
+                <label for="name">
+                    <span>Name: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="text" id="name" name="username">
+            </p>
+            <p>
+                <label for="mail">
+                    <span>E-mail: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="email" id="mail" name="usermail">
+            </p>
+            <p>
+                <label for="pwd">
+                    <span>Password: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="password" id="pwd" name="password">
+            </p>
+        </section>
+        <section>
+            <h2>Payment information</h2>
+            <p>
+                <label for="card">
+                    <span>Card type:</span>
+                </label>
+                <label for="myFruit">What's your favorite fruit?</label>
+                <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+                <datalist id="mySuggestion">
+                  <option>Apple</option>
+                  <option>Banana</option>
+                  <option>Blackberry</option>
+                  <option>Blueberry</option>
+                  <option>Lemon</option>
+                  <option>Lychee</option>
+                  <option>Peach</option>
+                  <option>Pear</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="number">
+                    <span>Card number:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="tel" id="number" name="cardnumber">
+            </p>
+            <p>
+                <label for="date">
+                    <span>Expiration date:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                    <em>formatted as mm/dd/yyyy</em>
+                </label>
+                <input type="date" id="date" name="expiration">
+            </p>
+        </section>
+        <section>
+            <p> <button type="submit">Validate the payment</button> </p>
+        </section>
+    </form>
 </body>
 
 </html>
