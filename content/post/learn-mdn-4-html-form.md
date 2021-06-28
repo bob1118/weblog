@@ -490,18 +490,351 @@ sequenceDiagrams:
 
 ### 4.1.7 样式化表单
 
-### 高级样式表单
+#### 4.1.7.1 基本样式美化
 
-### UI伪类
+- Search字段
 
-### 客户端表单验证
+```css
+input[type=search]{
+    border: 1px dotted #999;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+```
 
-### 发送表单数据
+```html
+<form>
+    <input type="search">
+</form>
+```
+
+- 字体和文本
+
+```css
+button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+}
+```
+
+- 盒子模型
+
+```css
+button, input, select, textarea{
+    width: 150px;
+    margin: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+```
+
+- 定位
+  - legend
+  - textarea
+
+```html
+<style>
+    legend {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+</style>
+
+<fieldset>
+    <legend>hi</legend>
+    <h1>hello</h1>
+</fieldset>
+```
+
+```css
+textarea {
+    vertical-align: top;
+    }
+```
+
+#### 4.1.7.2 实际案例
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Postcard example</title>
+    <style>
+        @font-face {
+            font-family: 'handwriting';
+            src: url('fonts/journal-webfont.woff2') format('woff2'),
+                url('fonts/journal-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'typewriter';
+            src: url('fonts/veteran_typewriter-webfont.woff2') format('woff2'),
+                url('fonts/veteran_typewriter-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font: 1.3rem sans-serif;
+            padding: 0.5em;
+            margin: 0;
+            background: #222;
+        }
+
+        form {
+            position: relative;
+            width: 740px;
+            height: 498px;
+            margin: 0 auto;
+            padding: 1em;
+            box-sizing: border-box;
+            background: #FFF url(background.jpg);
+
+            /* we create our grid */
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 10em 1em 1em 1em;
+        }
+
+        h1 {
+            font: 1em "typewriter", monospace;
+            align-self: end;
+        }
+
+        #message {
+            grid-row: 1 / 5;
+        }
+
+        #from,
+        #reply {
+            display: flex;
+        }
+
+        label {
+            font: .8em "typewriter", sans-serif;
+        }
+
+        input,
+        textarea {
+            font: 1.4em/1.5em "handwriting", cursive, sans-serif;
+            border: none;
+            padding: 0 10px;
+            margin: 0;
+            width: 80%;
+            background: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            background: rgba(0, 0, 0, .1);
+            border-radius: 5px;
+        }
+
+        textarea {
+            display: block;
+
+            padding: 10px;
+            margin: 10px 0 0 -10px;
+            width: 100%;
+            height: 90%;
+
+            border-right: 1px solid;
+
+            /* resize  : none; */
+            overflow: auto;
+        }
+
+        button {
+            padding: 5px;
+            font: bold .6em sans-serif;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background: none;
+            cursor: pointer;
+            transform: rotate(-1.5deg);
+        }
+
+        button:after {
+            content: " >>>";
+        }
+
+        button:hover,
+        button:focus {
+            outline: none;
+            background: #000;
+            color: #FFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h1>to: Mozilla</h1>
+
+        <div id="from">
+            <label for="name">from:</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+
+        <div id="reply">
+            <label for="mail">reply:</label>
+            <input type="email" id="mail" name="user_email">
+        </div>
+
+        <div id="message">
+            <label for="msg">Your message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit">Send your message</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
+```
+
+### 4.1.8 高级样式表单
+
+#### 4.1.8.1 CSS表现力
+
+- CSS 2.1
+  - :active
+  - :focus
+  - :hover
+- CSS Selector Level 3
+  - :enabled
+  - :disabled
+  - :checked
+  - :indeterminate
+- CSS Basic UI Level 3
+  - :default
+  - :valid
+  - :invalid
+  - :in-range
+  - :out-of-range
+  - :required
+  - :optional
+  - :read-only
+  - :read-write
+- CSS Selector Level 4
+  - :user-error
+
+- Mozilla CSS
+  - :-moz-placeholder
+  - :-moz-submit-invalid
+  - :-moz-ui-invalid
+  - :-moz-ui-valid
+- WebKit CSS
+  - ::-webkit-input-placeholder
+  - others
+- Microsoft CSS
+  - :-ms-input-placeholder
+
+#### 4.1.8.2 案例
+
+- 复选框和单选框
+
+### 4.1.9 UI伪类
+
+### 4.1.10 客户端表单验证
+
+#### 4.1.10.1 什么是表单数据校验
+
+- 客户端校验
+  - HTML5内置校验
+  - JavaScript校验
+- 服务器端校验
+
+#### 4.1.10.2 HTML5内置表单校验
+
+- Input元素的校校验
+- Input元素required属性
+- 正则表达式校验
+- 限制输入长度maxlength/minlength
+- 自定义错误信息(javascript)
+
+#### 4.1.10.3 JavaScript校验表单
+
+- 支持约束校验API的表单元素
+  - [HTMLButtonElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement)
+  - [HTMLFieldSetElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement)
+  - [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement)
+  - [HTMLOutputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOutputElement)
+  - [HTMLSelectElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement)
+  - [HTMLTextAreaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement)
+- 约束校验API的属性
+  - validationMessage
+  - validity
+  - validity.customError
+  - validity.patternMismatch
+  - validity.rageOverflow
+  - validity.rageUnderflow
+  - validity.stepMismatch
+  - validity.tooLong
+  - validity.typeMismatch
+  - validity.valid
+  - validity.valueMissing
+  - willValidate
+- 约束校验API的方法
+  - checkValidity()
+  - HTMLFormElement.reportValidity()
+  - setCustomValidity(message)
+- 使用约束校验API的例子
+
+### 4.1.11 发送表单数据
+
+<https://developer.mozilla.org/zh-CN/docs/Learn/Forms/Sending_and_retrieving_form_data>
+
+#### 4.1.11.1 数据都去那儿了
+
+- 客户端/服务器体系结构
+- 客户端定义如何发送数据
+  - action="http://example.com/action"
+  - method
+    - GET([get-method.html](https://github.com/mdn/learning-area/blob/master/html/forms/sending-form-data/get-method.html))
+    - POST([post-method.html](https://github.com/mdn/learning-area/blob/master/html/forms/sending-form-data/post-method.html))
+  - 浏览器里查看HTTP请求
+- 服务端如何检索数据
+  - PHP([php-example.html](https://github.com/mdn/learning-area/blob/master/html/forms/sending-form-data/php-example.html))
+  - Python([python-example.py](https://github.com/mdn/learning-area/blob/master/html/forms/sending-form-data/python-example.py))
+  - 其他语言和框架
+    - Django for Python
+    - Express for Node.js
+    - Laravel for PHP
+    - Ruby On Rails for Ruby
+    - Phoenix for Elixir
+
+#### 4.1.11.2 发送文件
+
+- method get
+- enctype multipart/form-data
+
+#### 4.1.11.3 安全问题
+
+- XSS CSRF
+
+- SQL 注入
+
+- HTPP数据头注入
+
+- 电子邮件注入
 
 ## 4.2 Web表单进阶
 
-### 构造自定义表单控件
+### 4.2.1 构造自定义表单控件
 
-### 使用Javascript发送表单
+### 4.2.2 使用Javascript发送表单
 
-### 表单组件兼容性列表
+### 4.2.3 表单组件兼容性列表

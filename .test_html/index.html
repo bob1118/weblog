@@ -3,173 +3,93 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Payment form example</title>
+    <title>Favorite fruit start</title>
     <style>
-        h1 {
-            margin-top: 0;
-        }
-
-        ul {
-            margin: 0;
+        body {
+            font: 1em sans-serif;
             padding: 0;
-            list-style: none;
+            margin: 0;
         }
 
         form {
-            margin: 0 auto;
-            width: 400px;
-            padding: 1em;
-            border: 1px solid #CCC;
-            border-radius: 1em;
+            max-width: 400px;
+            margin: 0;
+            padding: 0 5px;
         }
 
-        div+div {
-            margin-top: 1em;
+        p>label {
+            display: block;
         }
 
-        label span {
-            display: inline-block;
-            width: 120px;
-            text-align: right;
-        }
-
-        input,
-        textarea {
-            font: 1em sans-serif;
-            width: 250px;
-            box-sizing: border-box;
-            border: 1px solid #999;
-        }
-
-        input[type=checkbox],
-        input[type=radio] {
-            width: auto;
-            border: none;
-        }
-
-        input:focus,
-        textarea:focus {
-            border-color: #000;
-        }
-
-        textarea {
-            vertical-align: top;
-            height: 5em;
-            resize: vertical;
-        }
-
+        input[type=text],
+        input[type=email],
+        input[type=number],
+        textarea,
         fieldset {
-            width: 250px;
+            /* 需要在基于WebKit的浏览器上对表单元素进行恰当的样式设置 */
+            -webkit-appearance: none;
+
+            width: 100%;
+            border: 1px solid #333;
+            margin: 0;
+
+            font-family: inherit;
+            font-size: 90%;
+
+            -moz-box-sizing: border-box;
             box-sizing: border-box;
-            margin-left: 136px;
-            border: 1px solid #999;
         }
 
-        button {
-            margin: 20px 0 0 124px;
+        input:invalid {
+            box-shadow: 0 0 5px 1px red;
         }
 
-        label {
-            position: relative;
-        }
-
-        label em {
-            position: absolute;
-            right: 5px;
-            top: 20px;
+        input:focus:invalid {
+            outline: none;
         }
     </style>
 </head>
 
 <body>
-    <form method="post">
-        <h1>Payment form</h1>
-        <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
-        <section>
-            <h2>Contact information</h2>
-            <fieldset>
-                <legend>Title</legend>
-                <ul>
-                    <li>
-                        <label for="title_1">
-                            <input type="radio" id="title_1" name="title" value="A">
-                            Ace
-                        </label>
-                    </li>
-                    <li>
-                        <label for="title_2">
-                            <input type="radio" id="title_2" name="title" value="K">
-                            King
-                        </label>
-                    </li>
-                    <li>
-                        <label for="title_3">
-                            <input type="radio" id="title_3" name="title" value="Q">
-                            Queen
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-            <p>
-                <label for="name">
-                    <span>Name: </span>
-                    <strong><abbr title="required">*</abbr></strong>
-                </label>
-                <input type="text" id="name" name="username">
-            </p>
-            <p>
-                <label for="mail">
-                    <span>E-mail: </span>
-                    <strong><abbr title="required">*</abbr></strong>
-                </label>
-                <input type="email" id="mail" name="usermail">
-            </p>
-            <p>
-                <label for="pwd">
-                    <span>Password: </span>
-                    <strong><abbr title="required">*</abbr></strong>
-                </label>
-                <input type="password" id="pwd" name="password">
-            </p>
-        </section>
-        <section>
-            <h2>Payment information</h2>
-            <p>
-                <label for="card">
-                    <span>Card type:</span>
-                </label>
-                <label for="myFruit">What's your favorite fruit?</label>
-                <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
-                <datalist id="mySuggestion">
-                  <option>Apple</option>
-                  <option>Banana</option>
-                  <option>Blackberry</option>
-                  <option>Blueberry</option>
-                  <option>Lemon</option>
-                  <option>Lychee</option>
-                  <option>Peach</option>
-                  <option>Pear</option>
-                </datalist>
-            </p>
-            <p>
-                <label for="number">
-                    <span>Card number:</span>
-                    <strong><abbr title="required">*</abbr></strong>
-                </label>
-                <input type="tel" id="number" name="cardnumber">
-            </p>
-            <p>
-                <label for="date">
-                    <span>Expiration date:</span>
-                    <strong><abbr title="required">*</abbr></strong>
-                    <em>formatted as mm/dd/yyyy</em>
-                </label>
-                <input type="date" id="date" name="expiration">
-            </p>
-        </section>
-        <section>
-            <p> <button type="submit">Validate the payment</button> </p>
-        </section>
+    <form>
+        <p>
+        <fieldset>
+            <legend>Title<abbr title="This field is mandatory">*</abbr></legend>
+            <input type="radio" required name="title" id="r1" value="Mr"><label for="r1">Mr.</label>
+            <input type="radio" required name="title" id="r2" value="Ms"><label for="r2">Ms.</label>
+        </fieldset>
+        </p>
+        <p>
+            <label for="n1">How old are you?</label>
+            <!-- 这里的pattern属性可以用作不支持number类input浏览器的备用方法
+               请注意当与数字输入框一起使用时，支持pattern属性的浏览器会使它沉默失效。
+               它仅仅是在这里用作备用 -->
+            <input type="number" min="12" max="120" step="1" id="n1" name="age" pattern="\d+">
+        </p>
+        <p>
+            <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory">*</abbr></label>
+            <input type="text" id="t1" name="fruit" list="l1" required
+                pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+            <datalist id="l1">
+                <option>Banana</option>
+                <option>Cherry</option>
+                <option>Apple</option>
+                <option>Strawberry</option>
+                <option>Lemon</option>
+                <option>Orange</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="t2">What's your e-mail?</label>
+            <input type="email" id="t2" name="email">
+        </p>
+        <p>
+            <label for="t3">Leave a short message</label>
+            <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
     </form>
 </body>
 
