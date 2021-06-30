@@ -1,96 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Favorite fruit start</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
     <style>
-        body {
-            font: 1em sans-serif;
-            padding: 0;
-            margin: 0;
+        .widget select,
+        .no-widget .select {
+            position: absolute;
+            left: -5000em;
+            height: 0;
+            overflow: hidden;
         }
 
-        form {
-            max-width: 400px;
-            margin: 0;
-            padding: 0 5px;
+        /* --------------- */
+        /* Required Styles */
+        /* --------------- */
+
+        .select {
+            position: relative;
+            display: inline-block;
         }
 
-        p>label {
-            display: block;
+        .select.active,
+        .select:focus {
+            box-shadow: 0 0 3px 1px #227755;
+            outline: none;
         }
 
-        input[type=text],
-        input[type=email],
-        input[type=number],
-        textarea,
-        fieldset {
-            /* 需要在基于WebKit的浏览器上对表单元素进行恰当的样式设置 */
-            -webkit-appearance: none;
+        .select .optList {
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
 
-            width: 100%;
-            border: 1px solid #333;
-            margin: 0;
+        .select .optList.hidden {
+            max-height: 0;
+            visibility: hidden;
+        }
 
-            font-family: inherit;
-            font-size: 90%;
+        /* ------------ */
+        /* Fancy Styles */
+        /* ------------ */
+
+        .select {
+            font-size: 0.625em;
+            /* 10px */
+            font-family: Verdana, Arial, sans-serif;
 
             -moz-box-sizing: border-box;
             box-sizing: border-box;
+
+            padding: 0.1em 2.5em 0.2em 0.5em;
+            /* 1px 25px 2px 5px */
+            width: 10em;
+            /* 100px */
+
+            border: 0.2em solid #000;
+            /* 2px */
+            border-radius: 0.4em;
+            /* 4px */
+
+            box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, .45);
+            /* 0 1px 2px */
+
+            background: #F0F0F0;
+            background: -webkit-linear-gradient(90deg, #E3E3E3, #fcfcfc 50%, #f0f0f0);
+            background: linear-gradient(0deg, #E3E3E3, #fcfcfc 50%, #f0f0f0);
         }
 
-        input:invalid {
-            box-shadow: 0 0 5px 1px red;
+        .select .value {
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            vertical-align: top;
         }
 
-        input:focus:invalid {
-            outline: none;
+        .select:after {
+            content: "▼";
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 2em;
+            /* 20px */
+            top: 0;
+            right: 0;
+
+            padding-top: .1em;
+
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            text-align: center;
+
+            border-left: .2em solid #000;
+            border-radius: 0 .1em .1em 0;
+
+            background-color: #000;
+            color: #FFF;
+        }
+
+        .select .optList {
+            z-index: 2;
+
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            background: #f0f0f0;
+            border: .2em solid #000;
+            border-top-width: .1em;
+            border-radius: 0 0 .4em .4em;
+
+            box-shadow: 0 .2em .4em rgba(0, 0, 0, .4);
+
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            min-width: 100%;
+            max-height: 10em;
+            /* 100px */
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .select .option {
+            padding: .2em .3em;
+        }
+
+        .select .highlight {
+            background: #000;
+            color: #FFFFFF;
+        }
+
+        .widget select,
+        .no-widget .select {
+            /* 这个CSS选择器大体上说的是：
+     - 要么我们将body的class设置为"widget"，隐藏真实的<select>元素
+     - 或是我们没有改变body的class,这样body的class还是"no-widget",
+       因此class为"select"的元素需要被隐藏 */
+            position: absolute;
+            left: -5000em;
+            height: 0;
+            overflow: hidden;
         }
     </style>
 </head>
 
 <body>
-    <form>
-        <p>
-        <fieldset>
-            <legend>Title<abbr title="This field is mandatory">*</abbr></legend>
-            <input type="radio" required name="title" id="r1" value="Mr"><label for="r1">Mr.</label>
-            <input type="radio" required name="title" id="r2" value="Ms"><label for="r2">Ms.</label>
-        </fieldset>
-        </p>
-        <p>
-            <label for="n1">How old are you?</label>
-            <!-- 这里的pattern属性可以用作不支持number类input浏览器的备用方法
-               请注意当与数字输入框一起使用时，支持pattern属性的浏览器会使它沉默失效。
-               它仅仅是在这里用作备用 -->
-            <input type="number" min="12" max="120" step="1" id="n1" name="age" pattern="\d+">
-        </p>
-        <p>
-            <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory">*</abbr></label>
-            <input type="text" id="t1" name="fruit" list="l1" required
-                pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
-            <datalist id="l1">
-                <option>Banana</option>
-                <option>Cherry</option>
-                <option>Apple</option>
-                <option>Strawberry</option>
-                <option>Lemon</option>
-                <option>Orange</option>
-            </datalist>
-        </p>
-        <p>
-            <label for="t2">What's your e-mail?</label>
-            <input type="email" id="t2" name="email">
-        </p>
-        <p>
-            <label for="t3">Leave a short message</label>
-            <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
-        </p>
-        <p>
-            <button>Submit</button>
-        </p>
+
+    <form class="no-widget">
+        <select name="myFruit">
+            <option>Cherry</option>
+            <option>Lemon</option>
+            <option>Banana</option>
+            <option>Strawberry</option>
+            <option>Apple</option>
+        </select>
+
+        <div class="select">
+            <span class="value">Cherry</span>
+            <ul class="optList hidden">
+                <li class="option">Cherry</li>
+                <li class="option">Lemon</li>
+                <li class="option">Banana</li>
+                <li class="option">Strawberry</li>
+                <li class="option">Apple</li>
+            </ul>
+        </div>
     </form>
+
+    <script>
+        window.addEventListener("load", function () {
+        var form = document.querySelector('form');
+
+        form.classList.remove("no-widget");
+        form.classList.add("widget");
+        });
+    </script>
+</body>
 </body>
 
 </html>
