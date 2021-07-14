@@ -3,49 +3,63 @@
   
   <url>
     <loc>https://tsinling.org/categories/</loc>
-    <lastmod>2021-06-28T12:42:51+08:00</lastmod>
+    <lastmod>2021-07-14T20:26:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/</loc>
-    <lastmod>2021-06-28T12:42:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/tags/html/</loc>
-    <lastmod>2021-06-28T12:42:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsinling.org/post/learn-mdn-4-html-form/</loc>
-    <lastmod>2021-06-28T12:42:51+08:00</lastmod>
+    <lastmod>2021-07-14T20:26:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/post/</loc>
-    <lastmod>2021-06-28T12:42:51+08:00</lastmod>
+    <lastmod>2021-07-14T20:26:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/categories/pub/</loc>
-    <lastmod>2021-06-28T12:42:51+08:00</lastmod>
+    <lastmod>2021-07-14T20:26:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tsinling.org/tags/</loc>
-    <lastmod>2021-06-28T12:42:51+08:00</lastmod>
+    <lastmod>2021-07-14T20:26:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/tags/vmware/</loc>
+    <lastmod>2021-07-14T20:26:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/post/vmware-network/</loc>
+    <lastmod>2021-07-14T20:26:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/tags/html/</loc>
+    <lastmod>2021-06-30T12:01:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsinling.org/post/learn-mdn-4-html-form/</loc>
+    <lastmod>2021-06-30T12:01:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
